@@ -1,0 +1,11 @@
+.articles-slider__slide {
+  width: 25rem;
+
+  @include md-block {
+    width: 35rem;
+  }
+
+  @include lg-block {
+    width: auto;
+  }
+}

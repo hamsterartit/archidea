@@ -1,0 +1,65 @@
+.h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 4.2rem;
+
+  @include md-block {
+    font-size: 8rem;
+    line-height: 9.6rem;
+  }
+}
+
+.h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3.6rem;
+
+  @include lg-block {
+    font-size: 6.5rem;
+    line-height: 7.8rem;
+  }
+}
+
+.h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 3rem;
+
+  @include lg-block {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+.h4 {
+
+}
+
+.text-lg {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.text-md {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+
+  @include lg-block {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+}
+
+.text-sm {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+.text-xsm {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

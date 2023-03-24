@@ -1,0 +1,47 @@
+.production-info__item {
+  display: grid;
+  margin-top: 7rem;
+
+  gap: 2rem;
+
+  @include lg-block {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 16rem;
+  }
+
+  &:nth-child(even) {
+    .production-info__img {
+      order: -1;
+    }
+  }
+}
+
+.production-info__title {
+  order: -1;
+
+  @include lg-block {
+    order: 0;
+  }
+}
+
+.production-info__text {
+  display: contents;
+
+  @include lg-block {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+  }
+}
+
+.production-info__img {
+  order: -1;
+  margin: auto;
+
+  border-radius: 0.5rem;
+
+  @include lg-block {
+    order: 0;
+  }
+}

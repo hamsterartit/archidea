@@ -1,0 +1,31 @@
+.project-info {
+  display: grid;
+  margin-top: 6rem;
+
+  gap: 6rem;
+
+  @include lg-block {
+    margin-top: 12rem;
+
+    gap: 12rem;
+  }
+}
+
+.project-info__img {
+  width: 100vw;
+  max-width: none;
+  height: auto;
+  margin-left: calc(50% - 50vw);
+
+  border-radius: 0.5rem;
+}
+
+.project-info__text {
+  @include lg-block {
+    width: 50%;
+
+    &:nth-of-type(even) {
+      justify-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.personal-details {
+  @include lg-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--mobile {
+    display: contents;
+
+    @include lg-block {
+      display: flex;
+    }
+  }
+
+  &--company {
+    order: 3;
+
+    @include lg-block {
+      order: 0;
+    }
+  }
+
+  &.hidden {
+    display: none;
+
+    @include lg-block {
+      display: flex;
+      visibility: hidden;
+
+      opacity: 0;
+    }
+  }
+}
+
+.personal-details__info {
+  display: grid;
+  position: relative;
+  order: 2;
+  margin-top: auto;
+
+  gap: 1rem;
+
+  @include lg-block {
+    order: 0;
+
+    gap: 2rem;
+  }
+}
+
+.personal-details__title {
+  margin-bottom: 1rem;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 2.2rem;
+
+  text-transform: uppercase;
+
+  @include lg-block {
+    display: none;
+  }
+}
+
+.personal-details__user {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  order: 0;
+  min-height: 5.8rem;
+  padding: 3rem;
+  column-gap: 3rem;
+
+  border: 1px solid transparent;
+
+  row-gap: 2rem;
+
+  @include sm-block {
+    grid-template-columns: repeat(3, auto);
+    min-height: 8.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @include md-block {
+    padding: 0;
+  }
+
+  @include lg-block {
+    margin-bottom: 7rem;
+  }
+}
+
+.personal-details__attributes {
+  grid-column: 2/3;
+
+  @include sm-block {
+    grid-column: 3/4;
+  }
+}
+
+.personal-details__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.8rem;
+  height: 5.8rem;
+  padding: 1rem;
+
+  border-radius: 9999px;
+
+  background-color: $raisin-black;
+
+  @include sm-block {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+}
+
+.personal-details__name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+
+  @include lg-block {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+.personal-details__company-name {
+  min-height: 5.8rem;
+  padding: 3rem;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+
+  @include sm-block {
+    min-height: 8.5rem;
+  }
+
+  @include md-block {
+    padding: 0;
+  }
+
+  @include lg-block {
+    margin-bottom: 7rem;
+
+    text-align: left;
+  }
+}

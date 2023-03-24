@@ -1,0 +1,91 @@
+.vacancies {
+  display: grid;
+  margin-top: 5.8rem;
+
+  gap: 5rem;
+
+  @include lg-block {
+    margin-top: 11rem;
+
+    gap: 10rem;
+  }
+}
+
+.vacancies__title {
+  color: $dark-gray;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+
+  @include lg-block {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+.vacancies__list {
+  display: grid;
+  margin-top: 2.4rem;
+
+  gap: 1rem;
+
+  @include lg-block {
+    margin-top: 5.6rem;
+
+    gap: 2rem;
+  }
+}
+
+.vacancies__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 6rem;
+  padding: 0.8rem 2rem;
+
+  border: 1px solid $black;
+  border-radius: 0.5rem;
+
+  color: $black;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+
+  @include lg-block {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.8rem;
+  }
+
+  &:hover {
+    background-color: $black;
+
+    color: $white;
+  }
+}
+
+.vacancies__link-icon {
+  width: 1rem;
+  height: 1rem;
+
+  @include lg-block {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.vacancies__hint {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 3rem;
+
+  @include lg-block {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  a {
+    color: $carmine-pink;
+  }
+}

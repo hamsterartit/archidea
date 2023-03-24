@@ -1,0 +1,11 @@
+.products-slider {
+  max-width: 100%;
+}
+
+.products-slider__slide {
+  width: 28rem;
+
+  @include xl-block {
+    width: auto;
+  }
+}

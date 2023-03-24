@@ -1,0 +1,166 @@
+.question-block {
+  padding-top: 7rem;
+
+  @include md-block {
+    padding-top: 12rem;
+  }
+}
+
+.question-block__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-block__top {
+  display: contents;
+
+  @include lg-block {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.6rem;
+
+    border-bottom: 2px solid $black;
+  }
+}
+
+.question-block__bottom {
+  display: contents;
+
+  @include lg-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    column-gap: 2rem;
+  }
+}
+
+.question-block__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 3;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+
+  gap: 2rem;
+
+  @include md-block {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @include lg-block {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @include xl-block {
+    width: 62.2rem;
+  }
+}
+
+.question-block__input {
+  width: 100%;
+  height: 5.2rem;
+  padding: 1rem;
+
+  border: 1px solid $black;
+  border-radius: 0.5rem;
+
+  background-color: $white;
+
+  color: $white;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 5.2rem;
+  text-transform: uppercase;
+
+  @include lg-block {
+    width: 30rem;
+
+    background-color: $black;
+  }
+
+  &::placeholder {
+    opacity: 0.7;
+  }
+}
+
+.question-block__btn {
+  padding: 0;
+
+  color: $black;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+
+  @include md-block {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+}
+
+.question-block__phone {
+  order: 1;
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+
+  border-bottom: 2px solid $black;
+
+  @include lg-block {
+    order: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    border-bottom: 0;
+  }
+}
+
+.question-block__phone-link {
+  margin-top: 1.6rem;
+
+  color: $tiffany-blue;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 5.5rem;
+  white-space: nowrap;
+
+  @include lg-block {
+    margin-top: 0;
+
+    font-size: 5rem;
+  }
+}
+
+.question-block__info {
+  display: contents;
+
+  @include lg-block {
+    display: flex;
+    max-width: 62.2rem;
+
+    gap: 2rem;
+  }
+}
+
+.question-block__lbl {
+  order: 2;
+}
+
+.question-block__lbl-subscribe {
+  order: 3;
+}
+
+.question-block__hint {
+  order: 4;
+
+  @include to($lg) {
+    color: $dark-gray;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}

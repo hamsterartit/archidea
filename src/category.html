@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archidea</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    @@include('./blocks/header/header.html')
+    <main>
+      <div class="page-wrapper">
+          <div class=" container container--sm">
+              @@include('./blocks/breadcrumbs/breadcrumbs.html', {
+              'links': {
+              'list': [
+              {'name': 'Главная', 'href': '/'},
+              {'name': 'Категории товаров', 'href': ''},
+              {'name': 'Уличные скамейки', 'href': ''},
+              {'name': 'Скамейки из металла и дерева', 'href': ''},
+              ]
+              }
+              })
+              <div class="page-wrapper__head">
+                  <h1 class="h2">Скамейки уличные</h1>
+              </div>
+              <div class="category-wrapper">
+                  @@include('./blocks/category-page/tags/tags.html')
+                  <div class="category-wrapper__sidebar">
+                      @@include('./blocks/category-page/categories-filter/categories-filter.html')
+                      @@include('./blocks/filter/filter.html')
+                  </div>
+                  @@include('./blocks/category-page/items/items.html')
+              </div>
+          </div>
+          @@include('./blocks/faq/faq.html')
+          @@include('./blocks/question-block/question-block.html')
+          <div class="page-wrapper__text container container--sm">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae vitae
+                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                  eos qui ratione voluptatem sequi nesciunt. Neque porro</p>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae vitae
+                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                  eos qui ratione voluptatem sequi nesciunt. Neque porro</p>
+          </div>
+      </div>
+
+    </main>
+    @@include('./blocks/footer/footer.html')
+
+  </body>
+</html>

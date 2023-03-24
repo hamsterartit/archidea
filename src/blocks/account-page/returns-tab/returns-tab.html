@@ -1,0 +1,101 @@
+<div class="returns">
+  <div class="returns__hint">
+    <h3>Для того, чтобы сделать возврат через личный кабинет необходимо:</h3>
+
+    <ul>
+      <li>Скачать заявление на возврат и заполнить его;</li>
+      <li>Сделать скан или фотографию заявления;</li>
+      <li>Выбрать или воспользоваться поиском заказа по номеру, прикрепить сканили фото заявления;</li>
+      <li>Заполнить обязательные поля;</li>
+      <li>Прикрепить дополнительные фотографии по товару при необходимости;</li>
+      <li>Оставить комментарий;</li>
+    </ul>
+  </div>
+
+  <form class="returns__form">
+    <h3 class="returns__form-title">форма возврата</h3>
+    <div class="field">
+      <label class="field__lbl">№ заказа</label>
+      <input class="field__input" type="text" placeholder="№ заказа" />
+    </div>
+    <div class="returns__files">
+      <label class="file" for="file-attach">
+        <input type="file" id="file-attach" />
+        <img class="file__icon" src="./img/file.png" alt="" loading="lazy" />
+        <span>Прикрепить заявление</span>
+      </label>
+      <a href="" class="file-link">Пример заполнения</a>
+    </div>
+    <div class="returns__form-fields">
+      <div class="field">
+        <label class="field__lbl">БИК</label>
+        <input class="field__input" type="text" placeholder="00000000" />
+      </div>
+      <div class="field">
+        <label class="field__lbl">ИНН</label>
+        <input class="field__input" type="text" placeholder="00000000" />
+      </div>
+    </div>
+    <div class="field">
+      <label class="field__lbl">Лицевой счет</label>
+      <input class="field__input" type="text" placeholder="00000000" />
+    </div>
+    <div class="field">
+      <label class="field__lbl">ФИО владельца счета</label>
+      <input class="field__input" type="text" placeholder="Имя Фамилия Отчествол" />
+    </div>
+    <div class="returns__form-details">
+      <div class="returns__comment field">
+        <label class="field__lbl">Комментарий</label>
+        <textarea class="field__input field__input--area" placeholder="Текст комментария"></textarea>
+      </div>
+      <div class="returns__photo field">
+        <span class="field__lbl">Фото товара</span>
+        <label class="photo-thumbs" for="photo-thumbs">
+          <input type="file" multiple id="photo-thumbs" />
+          <div class="photo-thumbs__media">
+            <img class="photo-thumbs__icon" src="./img/photo.png" alt="" loading="lazy" />
+          </div>
+          <div class="photo-thumbs__media">
+            <img class="photo-thumbs__icon" src="./img/photo.png" alt="" loading="lazy" />
+          </div>
+        </label>
+      </div>
+    </div>
+    <button class="returns__submit btn btn--lg btn--black" type="submit">Отправить заявку</button>
+  </form>
+
+  <div class="returns__info">
+    <div class="returns__info-item">
+      <svg class="returns__info-icon">
+        <use xlink:href="./icons/icons.svg#icon_exclamation"></use>
+      </svg>
+      <p>
+        <b>Обратите внимание!</b><br />
+        Ваше обращение будет отклонено в случае неполноты данных.
+      </p>
+    </div>
+    <div class="returns__info-item">
+      <svg class="returns__info-icon">
+        <use xlink:href="./icons/icons.svg#icon_time"></use>
+      </svg>
+      <p>Максимальный срок предоставления ответа на обращение составляет 24 часа.</p>
+    </div>
+    <div class="returns__info-item">
+      <svg class="returns__info-icon">
+        <use xlink:href="./icons/icons.svg#icon_money"></use>
+      </svg>
+      <p>Возврат денежных средств осуществляется после прихода заказа на склад.</p>
+    </div>
+    <div class="returns__info-item">
+      <svg class="returns__info-icon">
+        <use xlink:href="./icons/icons.svg#icon_exclamation-reverse"></use>
+      </svg>
+      <p>
+        Подробнее о возврате на странице: <a href=""><b>«Правила возврата»</b></a> и
+        <a href=""><b>«Возврат денег»</b></a
+        >.
+      </p>
+    </div>
+  </div>
+</div>

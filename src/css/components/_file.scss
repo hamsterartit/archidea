@@ -1,0 +1,49 @@
+.file {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+
+  @include lg-block {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.photo-thumbs__media {
+  aspect-ratio: 1/1;
+  border-radius: 0.5rem;
+  background-color: $bright-gray;
+  overflow: hidden;
+  position: relative;
+}
+
+.file__icon__icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+
+  @include lg-block {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+
+.file-link {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  color: $dark-gray;
+
+  @include lg-block {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}

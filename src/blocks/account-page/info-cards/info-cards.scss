@@ -1,0 +1,136 @@
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  order: 1;
+  margin-bottom: 2rem;
+
+  gap: 2rem;
+
+  @include lg-block {
+    grid-template-columns: 1fr;
+    order: 0;
+    margin-bottom: 0;
+  }
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 0.5rem;
+
+  color: $black;
+
+  @include lg-block {
+    padding: 2rem;
+
+    color: $white;
+  }
+
+  &--red {
+    @include lg-block {
+      background-color: $carmine-pink;
+    }
+  }
+
+  &--green {
+    @include lg-block {
+      background-color: $persian-green;
+    }
+  }
+}
+
+.info-card__top {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  text-align: center;
+
+  @include lg-block {
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    text-align: left;
+  }
+}
+
+.info-card__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.3rem;
+
+  border-radius: 0.5rem;
+
+  color: $white;
+
+  @include lg-block {
+    width: auto;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .info-card--red & {
+    background-color: $carmine-pink;
+  }
+
+  .info-card--green & {
+    background-color: $persian-green;
+  }
+}
+
+.info-card__icon {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  @include lg-block {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
+.info-card__attributes {
+  display: none;
+
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3rem;
+
+  @include lg-block {
+    display: block;
+  }
+}
+
+.info-card__bottom {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+
+  @include lg-block {
+    display: flex;
+  }
+}
+
+.info-card__btn,
+.info-card__text {
+  display: none;
+
+  color: $white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+
+  @include lg-block {
+    display: block;
+  }
+}

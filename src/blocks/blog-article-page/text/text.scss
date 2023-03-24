@@ -1,0 +1,8 @@
+.article-text {
+  padding-top: 4rem;
+
+  @include lg-block {
+    width: 50%;
+    padding-top: 2rem;
+  }
+}

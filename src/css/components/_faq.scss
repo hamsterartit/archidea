@@ -1,0 +1,98 @@
+.faq-item {
+  border: 1px solid $black;
+  border-radius: 0.5rem;
+
+  color: $black;
+
+  &._active {
+    background-color: $raisin-black;
+
+    color: $white;
+  }
+}
+
+.faq-item__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8rem 2rem;
+
+  color: currentcolor;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-align: left;
+
+  gap: 1.6rem;
+
+  @include lg-block {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.8rem;
+  }
+}
+
+.faq-item__btn-icon-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.faq-item__btn-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+
+  transition: opacity 0.1s ease-in-out;
+
+  opacity: 1;
+
+  color: currentcolor;
+
+  &--minus {
+    opacity: 0;
+  }
+
+  .faq-item._active & {
+    &--plus {
+      opacity: 0;
+    }
+
+    &--minus {
+      opacity: 1;
+    }
+  }
+}
+
+.faq-item__content {
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-item__info {
+  display: flex;
+
+  gap: 6rem;
+
+  @include lg-block {
+    width: 70%;
+  }
+
+  .faq-item_active & {
+    padding: 1.6rem 2rem;
+  }
+}
+
+.faq-item__img {
+  display: none;
+
+  @include lg-block {
+    display: block;
+  }
+}

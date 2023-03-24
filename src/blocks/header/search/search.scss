@@ -1,0 +1,45 @@
+.header-search {
+  position: relative;
+
+  @include xl-block {
+    width: 23rem;
+  }
+
+  @include xxxl-block {
+    width: 28.4rem;
+  }
+}
+
+.header-search__field-icon {
+  width: 2rem;
+  height: 2rem;
+
+  color: $black;
+}
+
+.header-search__field {
+  display: flex;
+
+  gap: 2rem;
+
+  @include xl-block {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+
+    border-bottom: 1px solid $black;
+  }
+}
+
+.header-search__input {
+  border: 0;
+
+  background-color: transparent;
+
+  color: $black;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}

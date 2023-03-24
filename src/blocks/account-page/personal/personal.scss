@@ -1,0 +1,88 @@
+.personal {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 3rem;
+
+  border: 1px solid $black;
+  border-radius: 0.5rem;
+  flex-grow: 1;
+
+  gap: 3rem;
+
+  @include md-block {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 7rem;
+
+    .personal-tab--sm & {
+      padding: 3rem 2rem 2rem 7rem;
+    }
+  }
+
+  @include xl-block {
+    gap: 7rem;
+
+    .personal-tab--sm & {
+      gap: 0;
+    }
+  }
+}
+
+.personal__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.8rem;
+  height: 5.8rem;
+  padding: 1rem;
+
+  border-radius: 9999px;
+
+  background-color: $raisin-black;
+
+  @include sm-block {
+    width: 16rem;
+    height: 16rem;
+    padding: 2rem;
+
+    .personal-tab--sm & {
+      margin-right: 4rem;
+    }
+  }
+}
+
+.personal__name {
+  margin-bottom: 4rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+
+  @include lg-block {
+    font-size: 2.5rem;
+    line-height: 3rem;
+
+    .personal-tab--sm & {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.personal__btn {
+  grid-column: 1/3;
+  width: 20rem;
+
+  justify-self: center;
+
+  @include md-block {
+    grid-column: 3/4;
+
+    .personal-tab--sm & {
+      grid-column: 2/3;
+    }
+  }
+
+  @include xl-block {
+    width: 30rem;
+  }
+}

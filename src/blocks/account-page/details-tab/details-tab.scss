@@ -1,0 +1,11 @@
+.details-tab {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+
+  @include lg-block {
+    display: grid;
+    grid-template-columns: 1fr 30rem 30rem;
+  }
+}

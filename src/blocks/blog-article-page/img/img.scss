@@ -1,0 +1,10 @@
+.article-img {
+  margin-top: 4rem;
+  overflow: hidden;
+
+  border-radius: 0.5rem;
+
+  @include lg-block {
+    margin-top: 7rem;
+  }
+}

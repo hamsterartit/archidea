@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archidea</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    @@include('./blocks/header/header.html')
+    <main>
+      <div class="page-wrapper">
+          <div class=" container container--sm">
+              @@include('./blocks/breadcrumbs/breadcrumbs.html', {
+              'links': {
+              'list': [
+              {'name': 'Главная', 'href': '/'},
+              {'name': 'Категории товаров', 'href': ''},
+              {'name': 'Уличные скамейки', 'href': ''},
+              {'name': 'Уличная скамья из металла и дерева', 'href': ''},
+              ]
+              }
+              })
+              <div class="details-wrapper">
+                  <div class="details-wrapper__grid">
+                      @@include('./blocks/details-page/slider/slider.html')
+                      @@include('./blocks/details-page/info/info.html')
+                  </div>
+                  @@include('./blocks/details-page/tabs/tabs.html')
+              </div>
+              @@include('./blocks/details-page/products/products.html')
+              @@include('./blocks/details-page/projects/projects.html')
+          </div>
+          @@include('./blocks/faq/faq.html')
+          @@include('./blocks/question-block/question-block.html')
+
+      </div>
+
+    </main>
+    @@include('./blocks/footer/footer.html')
+
+  </body>
+</html>

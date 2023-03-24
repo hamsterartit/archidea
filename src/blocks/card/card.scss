@@ -1,0 +1,165 @@
+.card {
+  position: relative;
+  padding: 2rem;
+
+  transition: background-color 0.3s ease-in-out;
+
+  border-radius: 0.5rem;
+
+  background-color: $bright-gray;
+
+  color: $black;
+
+  &:hover {
+    background-color: $raisin-black;
+
+    color: $white;
+  }
+}
+
+.card__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 2rem;
+}
+
+.card__fav-btn {
+ /* width: 2.7rem;
+  height: 2.7rem;
+  padding: 0;
+
+  color: $silver-sand;*/
+}
+
+.card__slider {
+  height: 15rem;
+  margin-top: 3.6rem;
+  margin-bottom: 3.6rem;
+
+  text-align: center;
+
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical > .swiper-pagination-bullets {
+    right: auto;
+    left: 1rem;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+
+    opacity: 1;
+    background-color: $dark-gray;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $black;
+  }
+}
+
+.card__img {
+  width: 21rem;
+  height: 15rem;
+
+  object-fit: contain;
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: $dark-gray;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+
+  gap: 0.6rem;
+
+  svg {
+    width: 2rem;
+    height: 1.8rem;
+  }
+}
+
+.card__description {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-top: 1.6rem;
+
+  row-gap: 2.4rem;
+}
+
+.card__title,
+.card__price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+
+  @include lg-block {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+.card__title {
+  grid-column: 1/2;
+
+  color: currentcolor;
+
+  @include lg-block {
+    grid-column: 1/2 span;
+    padding-right: 4rem;
+  }
+}
+
+.card__price {
+  grid-column: 2/3;
+
+  color: $dark-gray;
+  text-align: right;
+
+  @include lg-block {
+    grid-column: 1/2;
+
+    text-align: left;
+  }
+}
+
+.card__break {
+  @include lg-block {
+    display: none;
+  }
+}
+
+.card__link {
+  display: flex;
+  grid-column: 1/2 span;
+  align-items: center;
+  justify-content: center;
+  min-width: 8.6rem;
+  height: 3.9rem;
+
+  border: 1px solid currentcolor;
+  border-radius: 0.3rem;
+
+  color: currentcolor;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+
+  @include md-block {
+    grid-column: 2/3;
+    height: 3.2rem;
+  }
+}

@@ -1,0 +1,96 @@
+.tabs {
+  padding-top: 7.7rem;
+
+  @include lg-block {
+    padding-top: 1.4rem;
+  }
+}
+
+.tabs__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 2rem;
+
+  @include sm-block {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @include lg-block {
+    gap: 7rem;
+  }
+}
+
+.tabs__btn {
+  padding: 0;
+
+  border-bottom: 2px solid transparent;
+
+  color: $silver-sand;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.4rem;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include sm-block {
+    width: 45%;
+  }
+
+  @include md-block {
+    width: auto;
+  }
+
+  @include lg-block {
+    width: 45%;
+
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  &:nth-child(2) {
+    align-self: flex-end;
+    margin-top: 1.4rem;
+
+    @include sm-block {
+      align-self: flex-start;
+      margin-top: 0;
+    }
+  }
+
+  &._active {
+    border-bottom-color: $black;
+
+    color: $black;
+  }
+}
+
+.tabs__content {
+  display: none;
+  position: relative;
+  padding-top: 6rem;
+
+  @include md-block {
+    padding-top: 14rem;
+  }
+
+  &._active {
+    display: block;
+  }
+}
+
+.tabs__title-vertical {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: -9rem;
+
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+
+  @include xxl-block {
+    display: block;
+  }
+}

@@ -1,0 +1,13 @@
+.faq {
+  padding-top: 7rem;
+
+  @include lg-block {
+    padding-top: 16.2rem;
+  }
+}
+
+.faq__inner {
+  display: grid;
+
+  gap: 2rem;
+}

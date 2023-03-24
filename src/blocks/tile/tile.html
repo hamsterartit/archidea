@@ -1,0 +1,13 @@
+<div class="tile">
+    <a class="tile__inner" href="">
+        <h3 class="tile__title" href="">@@title</h3>
+        <img class="tile__img" src="@@img"/>
+    </a>
+
+
+    <div class="tile__links">
+        @@for (var i = 0; i < links.list.length; i++) {
+            @@include('link.html', `+(JSON.stringify(links.list[i]))+`)
+        }
+    </div>
+</div>

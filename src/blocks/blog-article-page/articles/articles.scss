@@ -1,0 +1,15 @@
+.articles {
+  padding-top: 4rem;
+
+  @include lg-block {
+    padding-top: 7rem;
+  }
+}
+
+.articles__head {
+  margin-bottom: 2rem;
+
+  @include lg-block {
+    margin-bottom: 4rem;
+  }
+}

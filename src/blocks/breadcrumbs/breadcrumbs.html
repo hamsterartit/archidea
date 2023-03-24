@@ -1,0 +1,5 @@
+<div class="breadcrumbs">
+    @@for (var i = 0; i < links.list.length; i++) {
+        @@include('link.html', `+(JSON.stringify(links.list[i]))+`)
+    }
+</div>

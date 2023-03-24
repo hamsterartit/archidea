@@ -1,0 +1,15 @@
+.feedback-items {
+  display: grid;
+  margin-top: 5.8rem;
+
+  gap: 2rem;
+
+  @include md-block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include lg-block {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 11rem;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archidea</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    @@include('./blocks/header/header.html')
+    <main>
+      <div class="page-wrapper">
+          <div class=" container container--sm">
+              @@include('./blocks/breadcrumbs/breadcrumbs.html', {
+              'links': {
+              'list': [
+              {'name': 'Главная', 'href': '/'},
+              {'name': 'Поиск', 'href': ''},
+              {'name': 'Поиск по запросу "МАФ"', 'href': ''},
+              ]
+              }
+              })
+              <div class="page-wrapper__head">
+                  <h1 class="h2">Поиск по запросу "МАФ"</h1>
+                  <p class="page-wrapper__subtitle">Найдено 200 товаров</p>
+              </div>
+              <div class="category-wrapper">
+                  <div class="category-wrapper__sidebar">
+                      @@include('./blocks/filter/filter.html')
+                  </div>
+                  @@include('./blocks/category-page/items/items.html')
+              </div>
+          </div>
+      </div>
+
+    </main>
+    @@include('./blocks/footer/footer.html')
+
+  </body>
+</html>

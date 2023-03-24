@@ -1,0 +1,10 @@
+.faq-items {
+  display: grid;
+  margin-top: 5.8rem;
+
+  gap: 2rem;
+
+  @include lg-block {
+    margin-top: 11rem;
+  }
+}

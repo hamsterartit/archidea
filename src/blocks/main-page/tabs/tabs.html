@@ -1,0 +1,16 @@
+<div class="tabs container container--sm" data-tabs>
+  <div class="tabs__controls">
+    <button class="tabs__btn _active" data-tab-btn>Новинки маф</button>
+    <button class="tabs__btn" data-tab-btn>Для компаний</button>
+  </div>
+  <div class="tabs__content _active" data-tabs-content>
+      <h2 class="h2 uppercase">категории товаров</h2>
+      <h2 class="tabs__title-vertical h2 uppercase">категории товаров</h2>
+      @@include('../../categories/categories.html', {'class': 'categories--mt-sm'})
+  </div>
+  <div class="tabs__content" data-tabs-content>
+      <h2 class="h2 uppercase">категории товаров2</h2>
+      <h2 class="tabs__title-vertical h2 uppercase">категории товаров</h2>
+      @@include('../../categories/categories.html', {'class': 'categories--mt-sm'})
+  </div>
+</div>

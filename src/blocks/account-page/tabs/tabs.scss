@@ -1,0 +1,88 @@
+.account-tabs {
+  padding-top: 3.2rem;
+}
+
+.account-tabs__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 1.4rem;
+
+  @include lg-block {
+    column-gap: 4.5rem;
+  }
+}
+
+.account-tabs__btn {
+  padding: 0;
+
+  border-bottom: 2px solid transparent;
+
+  color: $silver-sand;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  text-align: left;
+
+  @include md-block {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  @include lg-block {
+    font-size: 2rem;
+  }
+
+  @include xl-block {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-weight: 900;
+  }
+
+  &._active {
+    border-bottom-color: $black;
+
+    color: $black;
+
+    &:first-of-type {
+      @include to($sm - 1px) {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}
+
+.account-tabs__icon {
+  width: 2rem;
+  height: 2rem;
+  pointer-events: none;
+
+  @include sm-block {
+    display: none;
+  }
+}
+
+.account-tabs__btn-text {
+  display: none;
+  pointer-events: none;
+
+  @include sm-block {
+    display: block;
+  }
+}
+
+.account-tabs__content {
+  display: none;
+  position: relative;
+  padding-top: 2rem;
+
+  @include md-block {
+    margin-bottom: 10rem;
+    padding-top: 4rem;
+  }
+
+  &._active {
+    display: block;
+  }
+}

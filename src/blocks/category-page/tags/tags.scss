@@ -1,0 +1,48 @@
+.tags {
+  display: flex;
+  overflow-x: auto;
+
+  gap: 1rem;
+
+  @include lg-block {
+    grid-column: 2/3;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+  }
+}
+
+.tag {
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10rem;
+    height: 2rem;
+
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    border: 1px solid $black;
+    border-radius: 0.3rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+
+    @include md-block {
+      height: 32px;
+    }
+
+    :checked + & {
+      background-color: $black;
+
+      color: $white;
+    }
+  }
+}

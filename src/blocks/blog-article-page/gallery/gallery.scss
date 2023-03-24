@@ -1,0 +1,39 @@
+.article-gallery {
+  display: grid;
+  padding-top: 5rem;
+
+  gap: 2rem;
+
+  @include md-block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include lg-block {
+    padding-top: 18rem;
+  }
+}
+
+.article-gallery__grid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 2rem;
+
+  @include xl-block {
+    top: -32.5rem;
+  }
+}
+
+.article-gallery__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  border-radius: 0.5rem;
+
+  background-color: $bright-gray;
+
+  aspect-ratio: 1/1;
+}

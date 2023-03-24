@@ -1,0 +1,20 @@
+.category-wrapper {
+  display: grid;
+  margin-top: 3rem;
+
+  gap: 3rem;
+
+  @include lg-block {
+    grid-template-columns: 26rem 1fr;
+
+    gap: 4rem;
+  }
+}
+
+.category-wrapper__sidebar {
+  display: none;
+
+  @include lg-block {
+    display: block;
+  }
+}

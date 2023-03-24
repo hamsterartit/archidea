@@ -1,0 +1,15 @@
+.personal-tab {
+  display: grid;
+
+  gap: 2rem;
+
+  @include md-block {
+    margin-top: 7rem;
+  }
+
+  @include lg-block {
+    &--sm {
+      grid-template-columns: 1fr 0.5fr 0.5fr;
+    }
+  }
+}
