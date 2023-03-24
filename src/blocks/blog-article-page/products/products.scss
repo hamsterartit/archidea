@@ -1,19 +1,19 @@
 .products {
-  padding-top: 4rem;
+  padding-top: 40px;
 
   @include lg-block {
-    padding-top: 7rem;
+    padding-top: 70px;
   }
 }
 
 .products__head {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 
   text-align: center;
 
   @include lg-block {
-    top: -10rem;
+    top: -100px;
     margin-bottom: 0;
 
     text-align: right;
@@ -21,7 +21,7 @@
 }
 
 .products__title {
-  font-size: 2.5rem;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 30px;
 }

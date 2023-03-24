@@ -1,8 +1,8 @@
 .feedback {
-  padding-top: 7rem;
+  padding-top: 70px;
 
   @include lg-block {
-    padding-top: 16.2rem;
+    padding-top: 162px;
   }
 }
 
@@ -11,7 +11,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   overflow-x: auto;
 
-  gap: 2rem;
+  gap: 20px;
   scroll-snap-type: x mandatory;
 }
 

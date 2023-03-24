@@ -1,22 +1,22 @@
 .category-items {
   display: grid;
 
-  gap: 1rem;
+  gap: 10px;
 
   @include sm-block {
-    gap: 2rem;
+    gap: 20px;
   }
 }
 
 .category-items__list {
   display: grid;
 
-  gap: 2.5rem;
+  gap: 25px;
 
   @include sm-block {
     grid-template-columns: 1fr 1fr;
 
-    gap: 2rem;
+    gap: 20px;
   }
 
   @include xl-block {

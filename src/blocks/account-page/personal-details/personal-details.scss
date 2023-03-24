@@ -38,21 +38,21 @@
   order: 2;
   margin-top: auto;
 
-  gap: 1rem;
+  gap: 10px;
 
   @include lg-block {
     order: 0;
 
-    gap: 2rem;
+    gap: 20px;
   }
 }
 
 .personal-details__title {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 900;
-  line-height: 2.2rem;
+  line-height: 22px;
 
   text-transform: uppercase;
 
@@ -66,18 +66,18 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   order: 0;
-  min-height: 5.8rem;
-  padding: 3rem;
-  column-gap: 3rem;
+  min-height: 58px;
+  padding: 30px;
+  column-gap: 30px;
 
   border: 1px solid transparent;
 
-  row-gap: 2rem;
+  row-gap: 20px;
 
   @include sm-block {
     grid-template-columns: repeat(3, auto);
-    min-height: 8.5rem;
-    margin-bottom: 2rem;
+    min-height: 85px;
+    margin-bottom: 20px;
   }
 
   @include md-block {
@@ -85,7 +85,7 @@
   }
 
   @include lg-block {
-    margin-bottom: 7rem;
+    margin-bottom: 70px;
   }
 }
 
@@ -101,42 +101,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5.8rem;
-  height: 5.8rem;
-  padding: 1rem;
+  width: 58px;
+  height: 58px;
+  padding: 10px;
 
   border-radius: 9999px;
 
   background-color: $raisin-black;
 
   @include sm-block {
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 85px;
+    height: 85px;
   }
 }
 
 .personal-details__name {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 20px;
 
   @include lg-block {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
 .personal-details__company-name {
-  min-height: 5.8rem;
-  padding: 3rem;
+  min-height: 58px;
+  padding: 30px;
 
-  font-size: 2.5rem;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 30px;
   text-align: center;
 
   @include sm-block {
-    min-height: 8.5rem;
+    min-height: 85px;
   }
 
   @include md-block {
@@ -144,7 +144,7 @@
   }
 
   @include lg-block {
-    margin-bottom: 7rem;
+    margin-bottom: 70px;
 
     text-align: left;
   }

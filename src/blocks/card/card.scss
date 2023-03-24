@@ -1,10 +1,10 @@
 .card {
   position: relative;
-  padding: 2rem;
+  padding: 20px;
 
   transition: background-color 0.3s ease-in-out;
 
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   background-color: $bright-gray;
 
@@ -22,34 +22,34 @@
   align-items: center;
   justify-content: flex-end;
 
-  gap: 2rem;
+  gap: 20px;
 }
 
 .card__fav-btn {
- /* width: 2.7rem;
-  height: 2.7rem;
+  /* width:  27px;
+  height:  27px;
   padding: 0;
 
-  color: $silver-sand;*/
+  color: $silver-sand; */
 }
 
 .card__slider {
-  height: 15rem;
-  margin-top: 3.6rem;
-  margin-bottom: 3.6rem;
+  height: 150px;
+  margin-top: 36px;
+  margin-bottom: 36px;
 
   text-align: center;
 
   .swiper-pagination-vertical.swiper-pagination-bullets,
   .swiper-vertical > .swiper-pagination-bullets {
     right: auto;
-    left: 1rem;
+    left: 10px;
   }
 
   .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
   .swiper-pagination-bullet {
@@ -66,8 +66,8 @@
 }
 
 .card__img {
-  width: 21rem;
-  height: 15rem;
+  width: 210px;
+  height: 150px;
 
   object-fit: contain;
 }
@@ -84,31 +84,31 @@
   display: flex;
   align-items: center;
 
-  gap: 0.6rem;
+  gap: 6px;
 
   svg {
-    width: 2rem;
-    height: 1.8rem;
+    width: 20px;
+    height: 18px;
   }
 }
 
 .card__description {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin-top: 1.6rem;
+  margin-top: 16px;
 
-  row-gap: 2.4rem;
+  row-gap: 24px;
 }
 
 .card__title,
 .card__price {
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 2.2rem;
+  line-height: 22px;
 
   @include lg-block {
-    font-size: 2rem;
-    line-height: 2.4rem;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -119,7 +119,7 @@
 
   @include lg-block {
     grid-column: 1/2 span;
-    padding-right: 4rem;
+    padding-right: 40px;
   }
 }
 
@@ -147,19 +147,19 @@
   grid-column: 1/2 span;
   align-items: center;
   justify-content: center;
-  min-width: 8.6rem;
-  height: 3.9rem;
+  min-width: 86px;
+  height: 39px;
 
   border: 1px solid currentcolor;
-  border-radius: 0.3rem;
+  border-radius: 3px;
 
   color: currentcolor;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.7rem;
+  line-height: 17px;
 
   @include md-block {
     grid-column: 2/3;
-    height: 3.2rem;
+    height: 32px;
   }
 }

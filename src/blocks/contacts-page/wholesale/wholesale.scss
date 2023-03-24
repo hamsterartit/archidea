@@ -1,17 +1,17 @@
 .wholesale {
-  margin-top: 5.8rem;
+  margin-top: 58px;
 
   @include lg-block {
-    margin-top: 14.8rem;
+    margin-top: 148px;
   }
 }
 
 .wholesale__box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 4rem;
+  margin-top: 40px;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include lg-block {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,68 +20,68 @@
 
 .wholesale__img {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   aspect-ratio: 1/1;
   object-fit: cover;
 
   @include lg-block {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
 }
 
 .wholesale__title {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 20px;
+  line-height: 30px;
 
   @include lg-block {
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 }
 
 .wholesale__text {
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 14px;
+  line-height: 20px;
 
   @include lg-block {
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 .wholesale__actions {
   display: grid;
-  margin-top: 1.2rem;
+  margin-top: 12px;
 
   @include lg-block {
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 20px;
   }
 }
 
 .wholesale__social {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 20px;
 
-  gap: 0.8rem;
+  gap: 8px;
 
   @include lg-block {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 0;
 
-    gap: 1.4rem;
+    gap: 14px;
   }
 }
 
 .wholesale__social-link {
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
 
   @include lg-block {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 32px;
+    height: 32px;
   }
 }

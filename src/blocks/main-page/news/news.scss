@@ -1,8 +1,8 @@
 .news {
-  padding-top: 7rem;
+  padding-top: 70px;
 
   @include lg-block {
-    padding-top: 16.2rem;
+    padding-top: 162px;
   }
 }
 
@@ -11,7 +11,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   overflow-x: auto;
 
-  gap: 2rem;
+  gap: 20px;
   scroll-snap-type: x mandatory;
 }
 
@@ -23,7 +23,7 @@
   position: relative;
   overflow: hidden;
 
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   aspect-ratio: 408/416;
 }
@@ -36,46 +36,46 @@
 }
 
 .news__info {
-  padding: 1.6rem 1rem;
+  padding: 16px  10px;
 
   @include lg-block {
-    padding: 2rem;
+    padding: 20px;
   }
 }
 
 .news__title {
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 900;
-  line-height: 3.5rem;
+  line-height: 35px;
 
   @include xl-block {
-    font-size: 5rem;
-    line-height: 5.5rem;
+    font-size: 50px;
+    line-height: 55px;
   }
 }
 
 .news__date {
-  padding-top: 1.6rem;
-  padding-bottom: 1.2rem;
+  padding-top: 16px;
+  padding-bottom: 12px;
 
   color: $ultramarine-blue;
-  font-size: 1.2rem;
-  line-height: 3rem;
+  font-size: 12px;
+  line-height: 30px;
 
   @include lg-block {
-    padding-top: 2.4rem;
-    padding-bottom: 1.6rem;
+    padding-top: 24px;
+    padding-bottom: 16px;
 
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 }
 
 .news__text {
-  font-size: 1.6rem;
-  line-height: 2.5rem;
+  font-size: 16px;
+  line-height: 25px;
 
   @include lg-block {
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 18px;
+    line-height: 30px;
   }
 }

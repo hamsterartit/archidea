@@ -1,15 +1,15 @@
 .article-gallery {
   display: grid;
-  padding-top: 5rem;
+  padding-top: 50px;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include md-block {
     grid-template-columns: 1fr 1fr;
   }
 
   @include lg-block {
-    padding-top: 18rem;
+    padding-top: 180px;
   }
 }
 
@@ -18,10 +18,10 @@
   position: relative;
   grid-template-columns: 1fr 1fr;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include xl-block {
-    top: -32.5rem;
+    top: -325px;
   }
 }
 
@@ -29,9 +29,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 20px;
 
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   background-color: $bright-gray;
 

@@ -1,10 +1,10 @@
 .categories-filter {
-  margin-bottom: 15rem;
+  margin-bottom: 150px;
 }
 
 .categories-filter__inner {
-  margin-top: 2.4rem;
-  padding-left: 2rem;
+  margin-top: 24px;
+  padding-left: 20px;
 }
 
 .categories-filter__btn {
@@ -13,17 +13,17 @@
   padding: 0;
 
   color: $black;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 2.2rem;
+  line-height: 22px;
   text-align: left;
 
-  gap: 2rem;
+  gap: 20px;
 }
 
 .categories-filter__icon {
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 9px;
+  height: 9px;
 
   transition: transform 0.2s ease-out;
 
@@ -41,7 +41,7 @@
   transition: max-height 0.2s ease-out;
 
   &--active {
-    margin: 1rem 0 1.6rem 2rem;
+    margin: 10px 0  16px  20px;
   }
 }
 

@@ -1,8 +1,8 @@
 .articles-slider__slide {
-  width: 25rem;
+  width: 250px;
 
   @include md-block {
-    width: 35rem;
+    width: 350px;
   }
 
   @include lg-block {

@@ -1,15 +1,15 @@
 .account-tabs {
-  padding-top: 3.2rem;
+  padding-top: 32px;
 }
 
 .account-tabs__controls {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 1.4rem;
+  column-gap: 14px;
 
   @include lg-block {
-    column-gap: 4.5rem;
+    column-gap: 45px;
   }
 }
 
@@ -19,25 +19,25 @@
   border-bottom: 2px solid transparent;
 
   color: $silver-sand;
-  font-size: 1rem;
+  font-size: 10px;
   font-weight: 700;
-  line-height: 1.2rem;
+  line-height: 12px;
   text-align: left;
 
   @include md-block {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
+    font-size: 18px;
+    line-height: 24px;
     text-transform: uppercase;
   }
 
   @include lg-block {
-    font-size: 2rem;
+    font-size: 20px;
   }
 
   @include xl-block {
-    font-size: 3rem;
-    line-height: 3.6rem;
+    font-size: 30px;
     font-weight: 900;
+    line-height: 36px;
   }
 
   &._active {
@@ -54,8 +54,9 @@
 }
 
 .account-tabs__icon {
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
+
   pointer-events: none;
 
   @include sm-block {
@@ -65,6 +66,7 @@
 
 .account-tabs__btn-text {
   display: none;
+
   pointer-events: none;
 
   @include sm-block {
@@ -75,11 +77,11 @@
 .account-tabs__content {
   display: none;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 20px;
 
   @include md-block {
-    margin-bottom: 10rem;
-    padding-top: 4rem;
+    margin-bottom: 100px;
+    padding-top: 40px;
   }
 
   &._active {

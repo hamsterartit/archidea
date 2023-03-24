@@ -1,56 +1,60 @@
 @import 'tabs/tabs';
 
 @import 'details-tab/details-tab';
+
 @import 'personal-tab/personal-tab';
 
 @import 'orders-tab/orders-tab';
+
 @import 'returns-tab/returns-tab';
 
 @import 'personal-details/personal-details';
 
 @import 'info-cards/info-cards';
+
 @import 'company/company';
 
 @import 'personal/personal';
+
 @import 'delivery/delivery';
 
 .personal-info-box {
   position: relative;
-  height: 5rem;
-  margin-top: 2rem;
-  padding: 0.8rem 2rem;
+  height: 50px;
+  margin-top: 20px;
+  padding: 8px 20px;
 
   border: 1px solid $black;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 3rem;
+  line-height: 30px;
 
   @include lg-block {
-    height: 6.5rem;
-    margin-top: 3rem;
-    padding: 1.6rem 2rem;
+    height: 65px;
+    margin-top: 30px;
+    padding: 16px 20px;
 
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 
   &::before {
     content: attr(data-lbl);
 
     position: absolute;
-    top: -2rem;
-    left: 0.8rem;
+    top: -20px;
+    left: 8px;
 
-    font-size: 1.2rem;
+    font-size: 12px;
     font-weight: 700;
-    line-height: 1.4rem;
+    line-height: 14px;
 
     @include lg-block {
-      top: -3rem;
+      top: -30px;
 
-      font-size: 1.8rem;
-      line-height: 2.2rem;
+      font-size: 18px;
+      line-height: 22px;
     }
   }
 
@@ -68,32 +72,32 @@
 .personal-edit-btn {
   display: flex;
   position: absolute;
-  top: 4.2rem;
+  top: 42px;
   right: 0;
   align-items: baseline;
 
   color: $gray;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 1.4rem;
+  line-height: 14px;
 
-  gap: 0.8rem;
+  gap: 8px;
 
   @include lg-block {
     position: static;
 
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 2.2rem;
+    line-height: 22px;
   }
 }
 
 .personal-edit-btn__icon {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 12px;
+  height: 12px;
 
   @include lg-block {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 24px;
+    height: 24px;
   }
 }

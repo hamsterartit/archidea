@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   color: $black;
 
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 1.6rem 2rem;
+  padding: 16px 20px;
 
   transition: background-color 0.3s ease-in-out;
 
@@ -31,13 +31,13 @@
 }
 
 .tile__title {
-  font-size: 2.5rem;
+  font-size: 25px;
   font-weight: 900;
-  line-height: 3rem;
+  line-height: 30px;
 
   @include md-block {
-    font-size: 4rem;
-    line-height: 5.8rem;
+    font-size: 40px;
+    line-height: 58px;
   }
 }
 
@@ -51,10 +51,10 @@
   display: none;
   position: absolute;
   flex-wrap: wrap;
-  column-gap: 1.8rem;
+  column-gap: 18px;
 
-  inset: auto 2rem 1.6rem;
-  row-gap: 1.1rem;
+  inset: auto 20px  16px;
+  row-gap: 11px;
 
   @include md-block {
     display: flex;

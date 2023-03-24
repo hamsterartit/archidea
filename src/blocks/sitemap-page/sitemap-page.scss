@@ -1,13 +1,13 @@
 .sitemap {
   display: grid;
   max-width: 100%;
-  margin-top: 3.6rem;
+  margin-top: 36px;
   overflow: hidden;
 
-  gap: 7rem;
+  gap: 70px;
 
   @include lg-block {
-    margin-top: 7rem;
+    margin-top: 70px;
   }
 
   > div {
@@ -18,20 +18,20 @@
 
 .sitemap__head {
   max-width: 100%;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   border-bottom: 1px solid $dark-gray;
 }
 
 .sitemap__title {
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 900;
-  line-height: 3rem;
+  line-height: 30px;
   text-transform: uppercase;
 
   @include lg-block {
-    font-size: 3rem;
+    font-size: 30px;
   }
 }
 
@@ -45,8 +45,8 @@
 
   td {
     width: 25%;
-    min-width: 20rem;
-    height: 3.5rem;
+    min-width: 200px;
+    height: 35px;
   }
 
   a {

@@ -1,20 +1,20 @@
 .banner {
   position: relative;
-  height: 20.6rem;
+  height: 206px;
 
   @include md-block {
-    height: 53.9rem;
-    margin-top: -7.4rem;
+    height: 539px;
+    margin-top: -74px;
   }
 
   @include lg-block {
-    height: 73.9rem;
-    margin-top: -10.8rem;
+    height: 739px;
+    margin-top: -108px;
   }
 
   @include xl-block {
-    height: 93.9rem;
-    margin-top: -10.8rem;
+    height: 939px;
+    margin-top: -108px;
   }
 }
 
@@ -32,13 +32,13 @@
   position: relative;
   flex-direction: column;
   height: 100%;
-  padding-top: 1rem;
+  padding-top: 10px;
 
   @include md-block {
-    padding-top: 16rem;
+    padding-top: 160px;
   }
 
   @include xl-block {
-    padding-top: 22rem;
+    padding-top: 220px;
   }
 }

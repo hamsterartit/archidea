@@ -15,29 +15,29 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  height: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   border: 1px solid $black;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   color: $black;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 2.4rem;
+  line-height: 24px;
   white-space: nowrap;
 
   @include md-block {
-    height: 4.5rem;
+    height: 45px;
   }
 }
 
 .btn--lg {
-  height: 7rem;
+  height: 70px;
 
   @include md-block {
-    height: 6.5rem;
+    height: 65px;
   }
 }
 
@@ -58,10 +58,10 @@ button {
 }
 
 .fav-btn {
-  width: 2.7rem;
-  height: 2.7rem;
-  padding: 0;
   flex-shrink: 0;
+  width: 27px;
+  height: 27px;
+  padding: 0;
 
   color: $silver-sand;
 }

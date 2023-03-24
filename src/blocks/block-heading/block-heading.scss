@@ -1,17 +1,17 @@
 .heading {
   display: contents;
-  margin-bottom: 2.4rem;
+  margin-bottom: 24px;
 
   @include lg-block {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 4.8rem;
+    margin-bottom: 48px;
   }
 }
 
 .heading__title {
-  margin-bottom: 2.4rem;
+  margin-bottom: 24px;
 
   @include lg-block {
     margin-bottom: 0;
@@ -30,29 +30,29 @@
   display: flex;
   align-items: center;
   order: 1;
-  margin-top: 1.5rem;
+  margin-top: 15px;
 
   color: $silver-sand;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 900;
-  line-height: 2.3rem;
+  line-height: 23px;
   text-transform: uppercase;
   white-space: nowrap;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include lg-block {
     margin-top: 0;
 
-    font-size: 3rem;
-    line-height: 3.6rem;
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
 .heading__link-icon {
   display: none;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 18px;
+  height: 18px;
 
   @include lg-block {
     display: block;

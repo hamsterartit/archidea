@@ -1,26 +1,26 @@
 .personal {
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 3rem;
+  flex-grow: 1;
+  padding: 30px;
 
   border: 1px solid $black;
-  border-radius: 0.5rem;
-  flex-grow: 1;
+  border-radius: 5px;
 
-  gap: 3rem;
+  gap: 30px;
 
   @include md-block {
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 7rem;
+    padding: 70px;
 
     .personal-tab--sm & {
-      padding: 3rem 2rem 2rem 7rem;
+      padding: 30px  20px  20px  70px;
     }
   }
 
   @include xl-block {
-    gap: 7rem;
+    gap: 70px;
 
     .personal-tab--sm & {
       gap: 0;
@@ -32,45 +32,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5.8rem;
-  height: 5.8rem;
-  padding: 1rem;
+  width: 58px;
+  height: 58px;
+  padding: 10px;
 
   border-radius: 9999px;
 
   background-color: $raisin-black;
 
   @include sm-block {
-    width: 16rem;
-    height: 16rem;
-    padding: 2rem;
+    width: 160px;
+    height: 160px;
+    padding: 20px;
 
     .personal-tab--sm & {
-      margin-right: 4rem;
+      margin-right: 40px;
     }
   }
 }
 
 .personal__name {
-  margin-bottom: 4rem;
+  margin-bottom: 40px;
 
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 20px;
 
   @include lg-block {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 25px;
+    line-height: 30px;
 
     .personal-tab--sm & {
-      margin-bottom: 2rem;
+      margin-bottom: 20px;
     }
   }
 }
 
 .personal__btn {
   grid-column: 1/3;
-  width: 20rem;
+  width: 200px;
 
   justify-self: center;
 
@@ -83,6 +83,6 @@
   }
 
   @include xl-block {
-    width: 30rem;
+    width: 300px;
   }
 }

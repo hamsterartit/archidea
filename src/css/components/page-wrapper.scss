@@ -4,10 +4,10 @@
 }
 
 .page-wrapper {
-  padding-top: 1rem;
+  padding-top: 10px;
 
   @include lg-block {
-    padding-top: 9rem;
+    padding-top: 90px;
   }
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
 
-  gap: 1rem;
+  gap: 10px;
 
   @include lg-block {
     flex-direction: row;
@@ -26,33 +26,33 @@
 
 .page-wrapper__subtitle {
   color: $dark-gray;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 20px;
   text-align: center;
 
   @include lg-block {
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 500;
-    line-height: 3.6rem;
+    line-height: 36px;
   }
 }
 
 .page-wrapper__text {
   display: flex;
   flex-direction: column;
-  padding-top: 7rem;
+  padding-top: 70px;
 
-  font-size: 1.4rem;
-  line-height: 2.5rem;
+  font-size: 14px;
+  line-height: 25px;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include lg-block {
     flex-direction: row;
-    padding-top: 14rem;
+    padding-top: 140px;
 
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 18px;
+    line-height: 30px;
   }
 }

@@ -2,17 +2,17 @@
   position: relative;
 
   @include xl-block {
-    width: 23rem;
+    width: 230px;
   }
 
   @include xxxl-block {
-    width: 28.4rem;
+    width: 284px;
   }
 }
 
 .header-search__field-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
 
   color: $black;
 }
@@ -20,11 +20,11 @@
 .header-search__field {
   display: flex;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include xl-block {
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
 
     border-bottom: 1px solid $black;
   }
@@ -36,8 +36,8 @@
   background-color: transparent;
 
   color: $black;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 12px;
+  line-height: 14px;
 
   &::placeholder {
     opacity: 0.5;

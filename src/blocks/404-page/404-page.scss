@@ -10,8 +10,8 @@
   @include to($sm) {
     width: 100vw;
     max-width: 100vw;
-    margin-right: -2rem;
-    margin-left: -2rem;
+    margin-right: -20px;
+    margin-left: -20px;
   }
 
   &--mobile {
@@ -42,9 +42,9 @@
   align-self: center;
   padding-top: 50%;
 
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 3.5rem;
+  line-height: 35px;
   text-align: center;
 
   @include sm-block {
@@ -59,17 +59,17 @@
 
 .error__link {
   display: inline-flex;
-  width: 26rem;
+  width: 260px;
 
   @include lg-block {
-    width: 30rem;
+    width: 300px;
   }
 
   &:first-of-type {
-    margin-top: 8rem;
+    margin-top: 80px;
   }
 
   &:last-of-type {
-    margin-top: 2rem;
+    margin-top: 20px;
   }
 }

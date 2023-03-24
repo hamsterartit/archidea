@@ -1,30 +1,30 @@
 .vacancy {
-  margin-top: 3.6rem;
+  margin-top: 36px;
 
   @include lg-block {
-    margin-top: 7rem;
+    margin-top: 70px;
   }
 }
 
 .vacancy__title {
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 30px;
 
   @include lg-block {
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 }
 
 .vacancy__btn {
   min-width: 100%;
-  margin-top: 3.6rem;
+  margin-top: 36px;
 
   @include sm-block {
-    min-width: 30rem;
+    min-width: 300px;
   }
 
   @include lg-block {
-    margin-top: 7rem;
+    margin-top: 70px;
   }
 }

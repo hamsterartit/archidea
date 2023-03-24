@@ -1,70 +1,77 @@
 .returns {
-  margin-top: 1rem;
+  margin-top: 10px;
 
   @include lg-block {
-    margin-top: 3rem;
+    margin-top: 30px;
   }
 }
 
 .returns__hint {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 12px;
+  line-height: 14px;
 
   @include lg-block {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
 .returns__form {
-  width: 63rem;
-  max-width: 100%;
-  margin: 3rem auto 7rem auto;
   display: grid;
-  gap: 1rem;
+  width: 630px;
+  max-width: 100%;
+  margin: 30px auto 70px;
+
+  gap: 10px;
 
   @include lg-block {
-    margin: 9rem auto 13rem auto;
-    gap: 2rem;
+    margin: 90px auto 130px;
+
+    gap: 20px;
   }
 }
 
 .returns__form-title {
-  font-size: 1.8rem;
-  line-height: 2.2rem;
+  font-size: 18px;
   font-weight: 900;
+  line-height: 22px;
   text-transform: uppercase;
 }
 
 .returns__files {
   display: flex;
-  gap: 1rem;
   align-items: center;
   justify-content: space-between;
 
+  gap: 10px;
+
   @include lg-block {
     justify-content: flex-start;
-    gap: 3rem;
+
+    gap: 30px;
   }
 }
 
 .returns__form-fields {
   display: grid;
-  gap: 1rem;
+
+  gap: 10px;
 
   @include lg-block {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+
+    gap: 20px;
   }
 }
 
 .returns__form-details {
   display: grid;
-  gap: 1rem;
   grid-template-columns: 1fr 1fr;
 
+  gap: 10px;
+
   @include lg-block {
-    gap: 2rem;
+    gap: 20px;
   }
 }
 
@@ -82,17 +89,18 @@
 }
 
 .returns__submit {
-  margin-top: 4rem;
+  margin-top: 40px;
 
   @include sm-block {
-    width: calc(50% - 1rem);
+    width: calc(50% - 10px);
   }
 }
 
 .returns__info {
   display: grid;
-  gap: 2rem;
   justify-content: center;
+
+  gap: 20px;
 
   @include sm-block {
     grid-template-columns: 1fr 1fr;
@@ -106,17 +114,19 @@
 
 .returns__info-item {
   display: flex;
-  gap: 1rem;
-  width: 22rem;
+  width: 220px;
+
+  gap: 10px;
 
   @include sm-block {
-    gap: 3rem;
     width: auto;
+
+    gap: 30px;
   }
 }
 
 .returns__info-icon {
-  height: 4rem;
-  width: 4rem;
   flex-shrink: 0;
+  width: 40px;
+  height: 40px;
 }

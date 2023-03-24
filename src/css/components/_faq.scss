@@ -1,6 +1,6 @@
 .faq-item {
   border: 1px solid $black;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   color: $black;
 
@@ -16,36 +16,36 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.8rem 2rem;
+  padding: 8px 20px;
 
   color: currentcolor;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 25px;
   text-align: left;
 
-  gap: 1.6rem;
+  gap: 16px;
 
   @include lg-block {
-    font-size: 4rem;
+    font-size: 40px;
     font-weight: 900;
-    line-height: 4.8rem;
+    line-height: 48px;
   }
 }
 
 .faq-item__btn-icon-wrap {
   position: relative;
   flex-shrink: 0;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 45px;
+  height: 45px;
 }
 
 .faq-item__btn-icon {
   position: absolute;
   top: 0;
   left: 0;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 45px;
+  height: 45px;
 
   transition: opacity 0.1s ease-in-out;
 
@@ -78,14 +78,14 @@
 .faq-item__info {
   display: flex;
 
-  gap: 6rem;
+  gap: 60px;
 
   @include lg-block {
     width: 70%;
   }
 
   .faq-item_active & {
-    padding: 1.6rem 2rem;
+    padding: 16px 20px;
   }
 }
 

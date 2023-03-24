@@ -1,56 +1,58 @@
 .field {
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 
 .field__input {
+  display: block;
   position: relative;
-  height: 5rem;
-  padding: 0.8rem 2rem;
+  width: 100%;
+  height: 50px;
+  padding: 8px 20px;
 
   border: 1px solid $black;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 3rem;
-  display:block;
-  width: 100%;
+  line-height: 30px;
 
   @include lg-block {
-    height: 6.5rem;
-    padding: 1.6rem 2rem;
+    height: 65px;
+    padding: 16px 20px;
 
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 
   &--area {
-    height: 12rem;
+    height: 120px;
 
     @include sm-block {
-      flex-grow: 1
+      flex-grow: 1;
     }
   }
 
   &::placeholder {
-    color: $dark-gray;;
+    color: $dark-gray;
   }
 }
 
 .field__lbl {
   content: attr(data-lbl);
-  padding-left: 0.8rem;
 
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.4rem;
-  margin-bottom: 1rem;
   display: flex;
+  margin-bottom: 10px;
+  padding-left: 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
 
   @include lg-block {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 22px;
   }
 }

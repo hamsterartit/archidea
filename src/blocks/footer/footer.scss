@@ -1,23 +1,23 @@
 .footer {
-  padding-top: 9.6rem;
+  padding-top: 96px;
 
   @include lg-block {
-    padding-top: 26.2rem;
+    padding-top: 262px;
   }
 }
 
 .footer__inner {
-  padding-top: 2rem;
+  padding-top: 20px;
 
   background-color: $black;
 
   color: $white;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 2.5rem;
+  line-height: 25px;
 
   @include lg-block {
-    padding-top: 4rem;
+    padding-top: 40px;
 
     background-color: $raisin-black;
   }
@@ -26,10 +26,10 @@
 .footer__top {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2.8rem;
+  padding-bottom: 28px;
 
   @include lg-block {
-    padding-bottom: 4.8rem;
+    padding-bottom: 48px;
   }
 }
 
@@ -39,23 +39,23 @@
 
 .footer__main-link {
   color: $white;
-  font-size: 2.5rem;
+  font-size: 25px;
   font-weight: 900;
-  line-height: 3.5rem;
+  line-height: 35px;
   text-transform: uppercase;
 
   @include lg-block {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 50px;
+    line-height: 50px;
   }
 }
 
 .footer__request-btn {
   padding: 0;
 
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 900;
-  line-height: 3.6rem;
+  line-height: 36px;
   text-transform: uppercase;
 
   &--desktop {
@@ -70,7 +70,7 @@
   }
 
   &--mobile {
-    margin: 0 2rem 2rem;
+    margin: 0 20px 20px;
 
     color: $black;
 
@@ -90,7 +90,7 @@
   }
 
   &--mobile {
-    margin-top: 3rem;
+    margin-top: 30px;
 
     @include lg-block {
       display: none;
@@ -101,7 +101,7 @@
 .footer__box {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4.8rem;
+  padding-bottom: 48px;
 
   border-top: 2px solid $white;
 
@@ -122,12 +122,12 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-top: 1.2rem;
+  padding-top: 12px;
 
   @include lg-block {
-    padding-top: 0.8rem;
-    padding-right: 1.2rem;
-    padding-bottom: 4rem;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 40px;
   }
 
   &--right {
@@ -136,7 +136,7 @@
     border-top: 2px solid $white;
 
     @include lg-block {
-      padding-left: 1.8rem;
+      padding-left: 18px;
 
       border-top: 0;
       border-left: 2px solid $white;
@@ -145,7 +145,7 @@
 
   &--sm {
     @include lg-block {
-      width: 30rem;
+      width: 300px;
     }
   }
 }
@@ -154,7 +154,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2.4rem;
+  margin-bottom: 24px;
 }
 
 .footer__box-title {
@@ -162,14 +162,14 @@
 }
 
 .footer__box-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
 
   object-fit: contain;
 }
 
 .footer__nav-list {
-  padding-bottom: 4rem;
+  padding-bottom: 40px;
 
   @include lg-block {
     padding-bottom: 0;
@@ -208,21 +208,21 @@
 
 .footer__social-item {
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 4.8rem;
+  padding-top: 20px;
+  padding-bottom: 48px;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include lg-block {
     padding-top: 0;
     padding-bottom: 0;
 
-    gap: 3.2rem;
+    gap: 32px;
   }
 
   &--right {
     margin-left: auto;
-    padding-left: 3rem;
+    padding-left: 30px;
 
     border-left: 2px solid $white;
 
@@ -235,14 +235,14 @@
 }
 
 .footer__social-link {
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 34px;
+  height: 34px;
 
   color: $white;
 
   @include lg-block {
-    width: 4.8rem;
-    height: 4.8rem;
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -252,21 +252,21 @@
   color: $white;
 
   &:first-of-type {
-    margin-top: 2rem;
+    margin-top: 20px;
   }
 }
 
 .footer__copyright {
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 30px;
 
-  gap: 1rem;
+  gap: 10px;
 
   @include md-block {
     flex-direction: row;
 
-    gap: 2rem;
+    gap: 20px;
   }
 
   a {

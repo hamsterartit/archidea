@@ -1,13 +1,13 @@
 .project-info {
   display: grid;
-  margin-top: 6rem;
+  margin-top: 60px;
 
-  gap: 6rem;
+  gap: 60px;
 
   @include lg-block {
-    margin-top: 12rem;
+    margin-top: 120px;
 
-    gap: 12rem;
+    gap: 120px;
   }
 }
 
@@ -17,7 +17,7 @@
   height: auto;
   margin-left: calc(50% - 50vw);
 
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 
 .project-info__text {

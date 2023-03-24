@@ -1,30 +1,33 @@
 .delivery {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 2rem;
-
-  border-radius: 0.5rem;
   flex-grow: 0.5;
-  color: $white;
+  justify-content: space-between;
+  padding: 20px;
+
+  border-radius: 5px;
+
   background-color: $persian-green;
 
-  gap: 2rem;
+  color: $white;
+
+  gap: 20px;
 
   @include md-block {
-    gap: 3rem;
+    gap: 30px;
   }
 }
 
 .delivery__name {
-  font-size: 1.6rem;
+  margin-top: 10px;
+
+  font-size: 16px;
   font-weight: 700;
-  line-height: 2rem;
-  margin-top: 1rem;
+  line-height: 20px;
 
   @include lg-block {
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -33,12 +36,12 @@
 }
 
 .delivery__btn {
-  width: 20rem;
-
-  justify-self: center;
+  width: 200px;
   margin: 0 auto;
 
+  justify-self: center;
+
   @include xl-block {
-    width: 26rem;
+    width: 260px;
   }
 }

@@ -1,16 +1,16 @@
 .map {
-  margin-top: 5.8rem;
+  margin-top: 58px;
 
   @include lg-block {
-    margin-top: 14.8rem;
+    margin-top: 148px;
   }
 }
 
 .map__box {
-  height: 36rem;
-  margin-top: 4rem;
+  height: 360px;
+  margin-top: 40px;
 
   @include lg-block {
-    height: 63rem;
+    height: 630px;
   }
 }

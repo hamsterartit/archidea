@@ -1,25 +1,25 @@
 .categories {
   display: grid;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include md-block {
     grid-template-columns: 1fr 1fr;
   }
 
   &--mt-sm {
-    margin-top: 1.2rem;
+    margin-top: 12px;
 
     @include md-block {
-      margin-top: 4.8rem;
+      margin-top: 48px;
     }
   }
 
   &--mt-lg {
-    margin-top: 3.4rem;
+    margin-top: 34px;
 
     @include md-block {
-      margin-top: 10.2rem;
+      margin-top: 102px;
     }
   }
 }

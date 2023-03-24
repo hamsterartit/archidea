@@ -5,7 +5,7 @@
   justify-content: center;
   overflow: hidden;
 
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   background-color: $bright-gray;
 
@@ -15,25 +15,25 @@
 }
 
 .feedback-tile__text {
-  padding: 1.5rem;
+  padding: 15px;
 
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 20px;
+  line-height: 30px;
 
   @include lg-block {
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 }
 
 .feedback-tile__accent {
-  padding: 1.5rem;
+  padding: 15px;
 
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 900;
-  line-height: 3rem;
+  line-height: 30px;
 
   @include lg-block {
-    font-size: 3rem;
+    font-size: 30px;
   }
 }
 
@@ -48,12 +48,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 4.8rem;
-  height: 5rem;
+  width: 48px;
+  height: 50px;
 
   @include lg-block {
-    width: 8rem;
-    height: 8.4rem;
+    width: 80px;
+    height: 84px;
   }
 
   transform: translate(-50%, -50%);
@@ -73,18 +73,18 @@
 
 .feedback-tile__mute {
   position: absolute;
-  right: 1.2rem;
-  bottom: 1rem;
-  width: 3rem;
-  height: 3.4rem;
+  right: 12px;
+  bottom: 10px;
+  width: 30px;
+  height: 34px;
 
   color: $white;
 
   @include lg-block {
-    right: 3rem;
-    bottom: 2rem;
-    width: 5rem;
-    height: 4rem;
+    right: 30px;
+    bottom: 20px;
+    width: 50px;
+    height: 40px;
   }
 }
 
@@ -104,7 +104,7 @@
 
 .feedback-tile__title {
   display: none;
-  margin-top: 0.5rem;
+  margin-top: 5px;
 
   @include lg-block {
     display: block;

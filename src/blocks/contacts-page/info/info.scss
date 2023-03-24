@@ -1,8 +1,8 @@
 .contacts-info {
-  margin-top: 5.8rem;
+  margin-top: 58px;
 
   @include lg-block {
-    margin-top: 11rem;
+    margin-top: 110px;
   }
 }
 
@@ -10,18 +10,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: baseline;
-  margin-bottom: 4rem;
+  margin-bottom: 40px;
 
   @include md-block {
     grid-template-columns: 1fr 1fr 1.3fr;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
 }
 
 .contacts-info__grid {
   display: grid;
 
-  gap: 4rem;
+  gap: 40px;
 
   @include sm-block {
     grid-template-columns: 1fr 1fr;
@@ -51,12 +51,12 @@
 }
 
 .contacts-info__title {
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 30px;
 
   @include lg-block {
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 
   &--city {
@@ -70,7 +70,7 @@
 }
 
 .contacts-info__text {
-  width: 20rem;
+  width: 200px;
 
   @include lg-block {
     width: 100%;
@@ -80,34 +80,34 @@
 .contacts-social {
   display: flex;
   justify-content: space-between;
-  padding-top: 5rem;
+  padding-top: 50px;
 
   @include sm-block {
     justify-content: flex-start;
-    padding-top: 7rem;
+    padding-top: 70px;
 
-    gap: 11rem;
+    gap: 110px;
   }
 }
 
 .contacts-social__item {
   display: flex;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include lg-block {
-    gap: 3.2rem;
+    gap: 32px;
   }
 }
 
 .contacts-social__link {
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 34px;
+  height: 34px;
 
   color: $black;
 
   @include lg-block {
-    width: 4.8rem;
-    height: 4.8rem;
+    width: 48px;
+    height: 48px;
   }
 }

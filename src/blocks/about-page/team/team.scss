@@ -1,39 +1,39 @@
 .team {
-  margin-top: 10rem;
+  margin-top: 100px;
 
   @include lg-block {
-    margin-top: 20rem;
-    padding-bottom: 15rem;
+    margin-top: 200px;
+    padding-bottom: 150px;
   }
 }
 
 .team__info {
   display: grid;
-  margin-top: 4rem;
+  margin-top: 40px;
 
-  gap: 2rem;
+  gap: 20px;
 
   @include lg-block {
     grid-template-columns: auto 1fr;
-    margin-top: 7rem;
+    margin-top: 70px;
   }
 
   p + p {
-    margin-top: 2rem;
+    margin-top: 20px;
   }
 }
 
 .team__media {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 62rem;
+  max-width: 620px;
   margin: auto;
 
-  gap: 2rem;
+  gap: 20px;
 }
 
 .team__img {
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
   &:nth-child(1) {
     grid-column: 1/2;
@@ -72,11 +72,11 @@
   flex-direction: column-reverse;
   align-items: center;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 40px;
 
   text-align: center;
 
-  gap: 2.4rem;
+  gap: 24px;
 
   @include xl-block {
     flex-direction: row;
@@ -96,12 +96,12 @@
 }
 
 .team__lbl {
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 25px;
 
   @include lg-block {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 25px;
+    line-height: 30px;
   }
 }
