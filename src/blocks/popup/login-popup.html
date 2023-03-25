@@ -1,0 +1,27 @@
+<div class="popup" id="login-popup">
+  <div class="popup__overlay" data-popup-close="login-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="login-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <svg class="popup__icon">
+      <use xlink:href="./icons/icons.svg#icon_user"></use>
+    </svg>
+    <form class="popup__form">
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Эл. почта / Телефон*" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Пароль" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Вход</button>
+    </form>
+    <p class="popup__hint">*введите email или телефон без пробелов начиная с +7, пример: +79003001020</p>
+    <div class="popup__actions">
+      <button class="popup__action popup__action--black" data-popup-open="registration-popup">Регистрация</button>
+      <button class="popup__action popup__action--grey" data-popup-open="password-popup">Забыли пароль?</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="popup" id="registration-popup">
+  <div class="popup__overlay" data-popup-close="registration-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="registration-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <svg class="popup__icon">
+      <use xlink:href="./icons/icons.svg#icon_user"></use>
+    </svg>
+    <form class="popup__form">
+      <div class="popup__actions">
+        <input type="radio" style="display: none" id="phone" checked name="reg-type" />
+        <label for="phone" class="popup__radio">По телефону</label>
+        <input type="radio" style="display: none" id="mail" name="reg-type" />
+        <label for="mail" class="popup__radio">По эл. почте</label>
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Ваше имя" />
+      </div>
+      <div class="field" data-phone>
+        <input class="field__input" type="text" placeholder="Ваш телефон" />
+      </div>
+      <div class="field" data-mail hidden>
+        <input class="field__input" type="text" placeholder="Ваша почта" />
+      </div>
+      <div class="popup__actions">
+        <input type="radio" style="display: none" id="retail" name="sale-types" checked />
+        <label for="retail" class="popup__radio">Розничная</label>
+        <input type="radio" style="display: none" id="wholesale" name="sale-types" />
+        <label for="wholesale" class="popup__radio">Оптовая</label>
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Регистрация</button>
+    </form>
+    <p class="popup__hint">
+      *Я согласен с условиями предоставления услуг и обработкой моих персональных данных при нажатии
+      "Зарегистрироваться"
+    </p>
+    <div class="popup__actions">
+      <button class="popup__action popup__action--black" data-popup-open="login-popup">Вход</button>
+    </div>
+  </div>
+</div>

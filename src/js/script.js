@@ -7,6 +7,7 @@ import readyProjects from '../blocks/ready-projects/ready-projects';
 import faq from './faq';
 import card  from '../blocks/card/card';
 import slider  from '../blocks/details-page/slider/slider';
+import popup  from '../blocks/popup/popup';
 import production  from '../blocks/about-page/production/production';
 import categoriesFilter from '../blocks/category-page/categories-filter/categories-filter';
 
@@ -45,4 +46,5 @@ document.addEventListener('DOMContentLoaded', () => {
   products();
   articles();
   readyProjects();
+  popup();
 });
