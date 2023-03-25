@@ -11,8 +11,7 @@
 
 .popup__overlay {
   position: absolute;
-//  background: $light-silver;
- // background-blend-mode: multiply;
+  background-color: rgba(214, 214, 214, 0.41);
   backdrop-filter: blur(10px);
   inset: 0;
 }
@@ -79,7 +78,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  margin-top: 20px;
 
   .popup__hint + & {
     margin-top: 32px;

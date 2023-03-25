@@ -1,0 +1,32 @@
+<div class="popup" id="personal-popup">
+  <div class="popup__overlay" data-popup-close="personal-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="personal-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Персональные данные</h3>
+    <form class="popup__form">
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Имя" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Фамилия" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Отчество" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Дата рождения 00.00.0000" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Пол Мужской/Женский" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Сохранить</button>
+    </form>
+    <div class="popup__actions">
+      <button class="popup__action popup__action--black" data-popup-close="personal-popup">Отмена</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="popup" id="company-popup">
+  <div class="popup__overlay" data-popup-close="company-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="company-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Юридические данные</h3>
+    <form class="popup__form">
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Название компании" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Юридический адрес" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="ИНН" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="КПП" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Расчетный счет" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Сохранить</button>
+    </form>
+    <div class="popup__actions">
+      <button class="popup__action popup__action--black" data-popup-close="company-popup">Отмена</button>
+    </div>
+  </div>
+</div>
