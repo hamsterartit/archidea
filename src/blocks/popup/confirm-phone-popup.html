@@ -1,0 +1,22 @@
+<div class="popup" id="confirm-phone-popup">
+  <div class="popup__overlay" data-popup-close="confirm-phone-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="confirm-phone-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Подтверждение
+      номера телефона</h3>
+    <p class="popup__subtitle popup__subtitle--sm">На указанный номер +7 000 000 00 00 отправлен код подтверждения</p>
+    <form class="popup__form">
+      <div class="field">
+        <input class="field__input" type="text" placeholder="0000" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Подтвердить</button>
+    </form>
+    <div class="popup__actions">
+      <button class="popup__action popup__action--grey" data-popup-close="confirm-phone-popup">Отмена</button>
+    </div>
+  </div>
+</div>

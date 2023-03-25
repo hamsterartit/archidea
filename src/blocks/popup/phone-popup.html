@@ -1,0 +1,21 @@
+<div class="popup" id="phone-popup">
+  <div class="popup__overlay" data-popup-close="phone-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="phone-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Телефон</h3>
+    <form class="popup__form">
+      <div class="field">
+        <input class="field__input" type="text" placeholder="+7 000 000 00 00" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Сохранить</button>
+    </form>
+    <div class="popup__actions">
+      <button class="popup__action popup__action--black" data-popup-open="confirm-phone-popup">Подтвердить номер</button>
+      <button class="popup__action popup__action--grey" data-popup-close="phone-popup">Отмена</button>
+    </div>
+  </div>
+</div>

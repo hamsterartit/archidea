@@ -56,6 +56,12 @@
   text-align: center;
   margin-bottom: 24px;
 
+  &--sm {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+  }
+
   .popup__title + & {
     margin-top: -16px;
   }
