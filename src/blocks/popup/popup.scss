@@ -30,8 +30,8 @@
   position: absolute;
   width: 44px;
   height: 44px;
-  top: -50px;
-  right: -50px;
+  top: -45px;
+  right: -45px;
 }
 
 .popup__icon {
@@ -46,7 +46,10 @@
   font-size: 25px;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 32px;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .popup__subtitle {
@@ -59,6 +62,12 @@
   &--sm {
     font-size: 14px;
     line-height: 17px;
+    text-align: left;
+  }
+
+  &--lg {
+    font-size: 25px;
+    line-height: 30px;
     text-align: left;
   }
 
@@ -99,6 +108,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+  padding: 0;
 
   &:only-child {
     margin: 0 auto;
