@@ -52,6 +52,14 @@ const popup = function () {
       }
     });
   });
+
+  const forms = document.querySelectorAll('[data-popup-form]');
+
+  forms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+    })
+  })
 };
 
 export default popup;

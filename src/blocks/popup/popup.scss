@@ -89,6 +89,10 @@
   .popup__hint + & {
     margin-top: 32px;
   }
+
+  .popup__info + & {
+    margin-top: 60px;
+  }
 }
 
 .popup__action {
@@ -119,4 +123,16 @@
   :checked + & {
     color: $black;
   }
+}
+
+.popup__info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.popup__warn-icon {
+  width: 40px;
+  height: 40px;
 }
