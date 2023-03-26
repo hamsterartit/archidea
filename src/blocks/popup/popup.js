@@ -60,6 +60,35 @@ const popup = function () {
       e.preventDefault();
     })
   })
+
+  const stars = document.querySelectorAll("[data-star]");
+
+  function rateStar(event) {
+    const starId = event.target.id;
+    console.log(event.target)
+    const activeStars = document.querySelectorAll(".rating__star._active");
+
+    if (activeStars.length > 0) {
+      activeStars.forEach((star) => {
+        star.classList.remove("_active");
+      });
+    }
+
+    for (let i = 1; i <= 5; i++) {
+      const star = document.getElementById(`star${i}`);
+      if (i <= parseInt(starId.split("star")[1])) {
+        star.classList.add("_active");
+      } else {
+        star.classList.remove("_active");
+      }
+    }
+  }
+
+  stars.forEach((star) => {
+    star.addEventListener("mouseover", rateStar);
+    star.addEventListener("mouseleave", rateStar);
+    star.addEventListener("click", rateStar);
+  });
 };
 
 export default popup;

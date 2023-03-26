@@ -1,0 +1,66 @@
+<div class="popup" id="feedback-popup">
+  <div class="popup__overlay" data-popup-close="feedback-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="feedback-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Оставить отзыв</h3>
+    <form class="popup__form" data-popup-form>
+      <div class="field">
+        <input id="rating-value" type="hidden" value="" />
+        <span class="rating-lbl">Ваша оценка</span>
+        <label for="rating-value" class="rating">
+          <span id="star1" class="rating__star _active" data-star>
+            <svg>
+              <use xlink:href="./icons/icons.svg#icon_star"></use>
+            </svg>
+          </span>
+          <span id="star2" class="rating__star" data-star>
+            <svg>
+              <use xlink:href="./icons/icons.svg#icon_star"></use>
+            </svg>
+         </span>
+          <span id="star3" class="rating__star" data-star>
+            <svg>
+              <use xlink:href="./icons/icons.svg#icon_star"></use>
+            </svg>
+         </span>
+          <span id="star4" class="rating__star" data-star>
+            <svg>
+              <use xlink:href="./icons/icons.svg#icon_star"></use>
+            </svg>
+         </span>
+          <span id="star5" class="rating__star" data-star>
+            <svg>
+              <use xlink:href="./icons/icons.svg#icon_star"></use>
+            </svg>
+         </span>
+        </label>
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Имя" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Эл. почта" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Комментарий" />
+      </div>
+      <div class="field">
+        <span class="rating-lbl">Фото товара</span>
+        <label class="photo-thumbs" for="photo-thumbs">
+          <input type="file" multiple id="photo-thumbs" />
+          <span class="photo-thumbs__media photo-thumbs__media--sm">
+            <img class="photo-thumbs__icon" src="./img/photo.png" alt="" loading="lazy" />
+          </span>
+        </label>
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Отправить</button>
+    </form>
+    <p class="popup__hint">
+      Я согласен на обработку моих персональных данных при нажатии кнопки“Отправить”
+    </p>
+  </div>
+</div>

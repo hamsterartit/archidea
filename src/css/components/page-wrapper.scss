@@ -24,6 +24,27 @@
   }
 }
 
+
+
+.page-wrapper__link {
+  color: $silver-sand;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: left;
+  padding: 0;
+
+  gap: 20px;
+
+  @include lg-block {
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
 .page-wrapper__subtitle {
   color: $dark-gray;
   font-size: 16px;

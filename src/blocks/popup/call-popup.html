@@ -1,0 +1,23 @@
+<div class="popup" id="call-popup">
+  <div class="popup__overlay" data-popup-close="call-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="call-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Заказать звонок</h3>
+    <p class="popup__subtitle">Заполните форму и мы вам перезвоним</p>
+    <form class="popup__form" data-popup-form>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Имя" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Телефон +7 000 000 00 00" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Отправить</button>
+    </form>
+    <p class="popup__hint">Я согласен условиями предоставления услуг и обработкой моих персональных
+      данных при нажатии “Заказать звонок”</p>
+  </div>
+</div>

@@ -146,3 +146,33 @@
   width: 40px;
   height: 40px;
 }
+
+.rating-lbl {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark-gray;
+  margin-bottom: 6px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating__star {
+width: 45px;
+  height: 48px;
+  color: $dark-gray;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &._active {
+    color: #F7A81C;
+  }
+
+  svg {
+    pointer-events: none;
+  }
+}

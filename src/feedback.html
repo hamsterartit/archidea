@@ -22,6 +22,9 @@
               })
               <div class="page-wrapper__head">
                   <h1 class="h2 uppercase">Отзывы</h1>
+                  <button class="page-wrapper__link" data-popup-open="feedback-popup">
+                      Оставить отзыв
+                  </button>
               </div>
               @@include('./blocks/feedback-page/items/items.html')
           </div>
@@ -34,6 +37,8 @@
     @@include('./blocks/popup/login-popup.html')
     @@include('./blocks/popup/registration-popup.html')
     @@include('./blocks/popup/password-popup.html')
+    @@include('./blocks/popup/call-popup.html')
+    @@include('./blocks/popup/feedback-popup.html')
 
   </body>
 </html>

@@ -22,6 +22,10 @@
   background-color: $bright-gray;
 
   aspect-ratio: 1/1;
+
+  &--sm {
+    width: 65px;
+  }
 }
 
 .photo-thumbs__img {
