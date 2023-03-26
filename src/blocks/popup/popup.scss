@@ -3,6 +3,8 @@
   inset: 0;
   z-index: 9999;
   display: none;
+  max-height: 100vh;
+  overflow-y: auto;
 
   &._active {
     display: flex;
@@ -17,7 +19,7 @@
 }
 
 .popup__inner {
-  margin: auto;
+  margin: 45px auto auto;
   background-color: $white;
   padding: 34px 20px 26px 20px;
   border-radius: 5px;
@@ -28,10 +30,16 @@
 
 .popup__close {
   position: absolute;
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
   top: -45px;
-  right: -45px;
+  right: 0;
+
+  @include lg-block {
+    width: 44px;
+    height: 44px;
+    right: -45px;
+  }
 }
 
 .popup__icon {
