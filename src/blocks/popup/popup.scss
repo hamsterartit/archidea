@@ -12,20 +12,24 @@
 }
 
 .popup__overlay {
-  position: absolute;
+  position: fixed;
   background-color: rgba(214, 214, 214, 0.41);
   backdrop-filter: blur(10px);
   inset: 0;
 }
 
 .popup__inner {
-  margin: 45px auto auto;
+  margin: 65px auto auto;
   background-color: $white;
   padding: 34px 20px 26px 20px;
   border-radius: 5px;
   position: relative;
   width: 100%;
   max-width: 303px;
+
+  @include sm-block {
+    margin: auto;
+  }
 }
 
 .popup__close {
@@ -182,5 +186,40 @@ width: 45px;
 
   svg {
     pointer-events: none;
+  }
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.city__name {
+  font-weight: 500;
+  color: $persian-green;
+}
+
+.city-list {
+  display: grid;
+  gap: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.city-list__item {
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+
+  span {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+  }
+
+  :checked + span {
+    border-color: $black
   }
 }
