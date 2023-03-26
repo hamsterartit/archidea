@@ -134,14 +134,6 @@
   height: 16px;
 }
 
-.header__search {
-  display: none;
-
-  @include xl-block {
-    display: block;
-  }
-}
-
 .header__actions {
   display: flex;
   align-items: center;

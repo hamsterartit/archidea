@@ -1,11 +1,32 @@
-<div class="header-search">
-    <div class="header-search__field">
+<div class="header-search" data-search>
+  <div class="header-search__field">
+    <svg class="header-search__field-icon header-search__field-icon--hide">
+      <use xlink:href="./icons/icons.svg#icon_search"></use>
+    </svg>
+    <input class="header-search__input" data-search-input type="text" placeholder="Поиск" />
+    <button class="header-search__close" data-search-close>
       <svg class="header-search__field-icon">
-        <use xlink:href="./icons/icons.svg#icon_search"></use>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
       </svg>
-      <input class="header-search__input" type="text" placeholder="Поиск">
+    </button>
+  </div>
+  <div class="header-search__dropdown">
+    <p class="header-search__hint">по запросу “МАФ” найдено 907 товаров</p>
+    <div class="header-search__results">
+      <div class="header-search__result">
+        <img src="./img/bench.png" alt=""/>
+        <span>Скамейка «Счастье» 1800</span>
+      </div>
+      <div class="header-search__result">
+        <img src="./img/bench.png" alt=""/>
+        <span>Скамейка «Счастье» 1800</span>
+      </div>
+      <div class="header-search__result">
+        <img src="./img/bench.png" alt=""/>
+        <span>Скамейка «Счастье» 1800</span>
+      </div>
     </div>
-  <div>
 
+    <a class="header-search__link" href="">Все результаты</a>
   </div>
 </div>

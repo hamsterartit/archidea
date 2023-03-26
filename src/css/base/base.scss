@@ -99,3 +99,7 @@ p {
 [hidden] {
   display: none !important;
 }
+
+button svg {
+  pointer-events: none;
+}

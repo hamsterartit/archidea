@@ -1,4 +1,5 @@
 import header from '../blocks/header/header';
+import search from '../blocks/header/search/search';
 import tabs from './tabs';
 import video from './video';
 import products from '../blocks/products/products';
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })*/
 
   header();
+  search();
   tabs();
   video();
   faq();
