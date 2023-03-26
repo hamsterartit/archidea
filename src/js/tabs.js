@@ -1,5 +1,6 @@
 const tabs = function () {
     const tabs = document.querySelectorAll('[data-tab-btn]');
+    const goToBtns = document.querySelectorAll('[data-go-to-tab]');
     const tabsContent = document.querySelectorAll('[data-tabs-content]');
     const tabsParent = document.querySelector('[data-tabs]');
 
@@ -19,7 +20,6 @@ const tabs = function () {
     }
 
     if(tabs.length > 0) {
-        console.log(tabs)
         hideTabContent();
         showTabContent();
 
@@ -36,6 +36,14 @@ const tabs = function () {
             }
         });
     }
+
+    goToBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const idx = +btn.dataset.goToTab;
+            hideTabContent();
+            showTabContent(idx );
+        })
+    })
 };
 
 export default tabs;

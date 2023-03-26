@@ -1,6 +1,7 @@
 import header from '../blocks/header/header';
 import search from '../blocks/header/search/search';
 import tabs from './tabs';
+import file from './file';
 import video from './video';
 import products from '../blocks/products/products';
 import articles from '../blocks/articles/articles';
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(item.innerHTML);
   })*/
 
+  file();
   header();
   search();
   tabs();
