@@ -1,10 +1,11 @@
 .popup {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
   display: none;
+  position: fixed;
+  z-index: 9999;
   max-height: 100vh;
   overflow-y: auto;
+
+  inset: 0;
 
   &._active {
     display: flex;
@@ -13,19 +14,23 @@
 
 .popup__overlay {
   position: fixed;
-  background-color: rgba(214, 214, 214, 0.41);
+
+  background-color: rgba(214, 214, 214, 41%);
+
   backdrop-filter: blur(10px);
   inset: 0;
 }
 
 .popup__inner {
-  margin: 65px auto auto;
-  background-color: $white;
-  padding: 34px 20px 26px 20px;
-  border-radius: 5px;
   position: relative;
   width: 100%;
   max-width: 303px;
+  margin: 65px auto auto;
+  padding: 34px 20px 26px;
+
+  border-radius: 5px;
+
+  background-color: $white;
 
   @include sm-block {
     margin: auto;
@@ -34,28 +39,28 @@
 
 .popup__close {
   position: absolute;
-  width: 34px;
-  height: 34px;
   top: -45px;
   right: 0;
+  width: 34px;
+  height: 34px;
 
   @include lg-block {
+    right: -45px;
     width: 44px;
     height: 44px;
-    right: -45px;
   }
 }
 
 .popup__icon {
+  display: block;
   width: 32px;
   height: 32px;
-  display: block;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 32px;
 }
 
 .popup__title {
-  font-weight: 700;
   font-size: 25px;
+  font-weight: 700;
   line-height: 30px;
   text-align: center;
 
@@ -65,11 +70,12 @@
 }
 
 .popup__subtitle {
-  font-weight: 500;
+  margin-bottom: 24px;
+
   font-size: 18px;
+  font-weight: 500;
   line-height: 22px;
   text-align: center;
-  margin-bottom: 24px;
 
   &--sm {
     font-size: 14px;
@@ -90,15 +96,16 @@
 
 .popup__form {
   display: grid;
+
   gap: 20px;
 }
 
 .popup__hint {
-  font-size: 13px;
-  line-height: 17px;
   margin-top: 32px;
 
   color: $dark-gray;
+  font-size: 13px;
+  line-height: 17px;
 }
 
 .popup__actions {
@@ -117,10 +124,11 @@
 }
 
 .popup__action {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
   padding: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
 
   &:only-child {
     margin: 0 auto;
@@ -136,10 +144,11 @@
 }
 
 .popup__radio {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
   color: $dark-gray;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+
   cursor: pointer;
 
   :checked + & {
@@ -149,8 +158,9 @@
 
 .popup__info {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+
   gap: 40px;
 }
 
@@ -160,28 +170,33 @@
 }
 
 .rating-lbl {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: $dark-gray;
   margin-bottom: 6px;
+
+  color: $dark-gray;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
 }
 
 .rating {
   display: flex;
   align-items: center;
+
   gap: 8px;
 }
 
 .rating__star {
-width: 45px;
+  width: 45px;
   height: 48px;
-  color: $dark-gray;
+
   transition: color 0.3s ease;
+
+  color: $dark-gray;
+
   cursor: pointer;
 
   &._active {
-    color: #F7A81C;
+    color: #f7a81c;
   }
 
   svg {
@@ -193,33 +208,37 @@ width: 45px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   font-size: 18px;
   line-height: 22px;
 }
 
 .city__name {
-  font-weight: 500;
   color: $persian-green;
+  font-weight: 500;
 }
 
 .city-list {
   display: grid;
-  gap: 8px;
   max-height: 400px;
   overflow-y: auto;
+
+  gap: 8px;
 }
 
 .city-list__item {
   font-size: 18px;
   line-height: 30px;
+
   cursor: pointer;
 
   span {
     display: inline-block;
+
     border-bottom: 1px solid transparent;
   }
 
   :checked + span {
-    border-color: $black
+    border-color: $black;
   }
 }

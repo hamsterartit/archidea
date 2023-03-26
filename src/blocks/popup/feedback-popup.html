@@ -21,22 +21,22 @@
             <svg>
               <use xlink:href="./icons/icons.svg#icon_star"></use>
             </svg>
-         </span>
+          </span>
           <span id="star3" class="rating__star" data-star>
             <svg>
               <use xlink:href="./icons/icons.svg#icon_star"></use>
             </svg>
-         </span>
+          </span>
           <span id="star4" class="rating__star" data-star>
             <svg>
               <use xlink:href="./icons/icons.svg#icon_star"></use>
             </svg>
-         </span>
+          </span>
           <span id="star5" class="rating__star" data-star>
             <svg>
               <use xlink:href="./icons/icons.svg#icon_star"></use>
             </svg>
-         </span>
+          </span>
         </label>
       </div>
       <div class="field">
@@ -50,17 +50,18 @@
       </div>
       <div class="field">
         <span class="rating-lbl">Фото товара</span>
-        <label class="photo-thumbs" for="photo-thumbs">
-          <input type="file" multiple id="photo-thumbs" />
-          <span class="photo-thumbs__media photo-thumbs__media--sm">
-            <img class="photo-thumbs__icon" src="./img/photo.png" alt="" loading="lazy" />
-          </span>
+
+        <label class="photo-thumbs photo-thumbs--sm" for="photo-thumbs">
+          <input type="file" multiple id="photo-thumbs" data-photo-input />
+          <div class="photo-thumbs__inner" data-photo-box>
+            <span class="photo-thumbs__media">
+              <img class="photo-thumbs__icon" src="./img/photo.png" alt="" loading="lazy" />
+            </span>
+          </div>
         </label>
       </div>
       <button class="btn btn--lg btn--black" type="submit">Отправить</button>
     </form>
-    <p class="popup__hint">
-      Я согласен на обработку моих персональных данных при нажатии кнопки“Отправить”
-    </p>
+    <p class="popup__hint">Я согласен на обработку моих персональных данных при нажатии кнопки“Отправить”</p>
   </div>
 </div>

@@ -1,7 +1,7 @@
 const faq = function () {
   const accordionItems = document.querySelectorAll('[data-accordion]');
 
-  accordionItems.forEach(item => {
+  accordionItems.forEach((item) => {
     const header = item.querySelector('[data-accordion-btn]');
     const content = item.querySelector('[data-accordion-content]');
 
@@ -18,7 +18,7 @@ const faq = function () {
   });
 
   function closeAllItems() {
-    accordionItems.forEach(item => {
+    accordionItems.forEach((item) => {
       const content = item.querySelector('[data-accordion-content]');
 
       if (item.classList.contains('_active')) {

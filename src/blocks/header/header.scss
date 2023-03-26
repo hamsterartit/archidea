@@ -1,11 +1,11 @@
 .header {
   position: relative;
   z-index: 1;
+  height: 70px;
 
   transition: background-color 0.3s ease-in-out;
 
   color: $white;
-  height: 70px;
 
   @include xl-block {
     height: 104px;

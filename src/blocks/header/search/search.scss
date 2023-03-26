@@ -6,11 +6,12 @@
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
-    background: $white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    left: 0;
     padding: 18px 20px;
+
+    background: $white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 25%);
 
     &._mobile-active {
       display: block;
@@ -21,9 +22,10 @@
     width: 230px;
 
     &._active {
-      background-color: $bright-gray;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
       border-radius: 3px;
+
+      background-color: $bright-gray;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 25%);
     }
   }
 
@@ -35,22 +37,25 @@
 .header-search__dropdown {
   display: none;
   position: absolute;
-  padding: 5px 20px 20px;
   left: 0;
   width: 100%;
+  padding: 5px 20px 20px;
 
   @include to($xl - 1px) {
-    background: $white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     top: 59px;
+
+    background: $white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 25%);
   }
 
   @include xl-block {
-    background-color: $bright-gray;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
     top: 44px;
+
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    background-color: $bright-gray;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 25%);
   }
 
   .header-search._active & {
@@ -59,34 +64,35 @@
 }
 
 .header-search__hint {
+  color: $dark-gray;
   font-size: 12px;
   line-height: 14px;
-  color: $dark-gray;
   text-align: center;
 }
 
 .header-search__results {
   display: grid;
-  gap: 8px;
   padding-top: 25px;
   padding-bottom: 35px;
+
+  gap: 8px;
 }
 
 .header-search__result {
   display: grid;
-  gap: 8px;
   grid-template-columns: 40px 1fr;
+
   font-size: 14px;
   line-height: 17px;
+
+  gap: 8px;
 }
 
 .header-search__link {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 17px;
 }
-
-
 
 .search-field {
   display: flex;
@@ -100,6 +106,7 @@
     border-bottom: 1px solid $black;
   }
 }
+
 .search-field__icon {
   width: 20px;
   height: 20px;
@@ -114,6 +121,8 @@
 }
 
 .search-field__input {
+  flex-grow: 1;
+
   border: 0;
 
   background-color: transparent;
@@ -121,7 +130,6 @@
   color: $black;
   font-size: 12px;
   line-height: 14px;
-  flex-grow: 1;
 
   &::placeholder {
     opacity: 0.5;
@@ -129,13 +137,15 @@
 }
 
 .search-field__close {
-  padding: 0;
-  opacity: 0;
   visibility: hidden;
+  padding: 0;
+
+  opacity: 0;
 
   .header-search._active &,
   .header-search._mobile-active & {
-    opacity: 1;
     visibility: visible;
+
+    opacity: 1;
   }
 }

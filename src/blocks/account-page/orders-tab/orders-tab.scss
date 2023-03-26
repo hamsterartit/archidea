@@ -15,7 +15,7 @@
   @include lg-block {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 1fr auto;
-    padding: 0  20px;
+    padding: 0 20px;
 
     font-size: 18px;
     font-weight: 700;
@@ -34,10 +34,6 @@
   border-radius: 5px;
 
   color: $black;
-
-  &._active {
-
-  }
 }
 
 .order-item__btn {
@@ -58,7 +54,7 @@
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 1fr auto;
     align-items: center;
     min-height: 65px;
-    padding: 8px  20px;
+    padding: 8px 20px;
 
     font-size: 18px;
     font-weight: 500;
@@ -82,6 +78,8 @@
 
 .order-item__btn-price {
   @include to($lg - 1px) {
+    grid-column: 3/4;
+
     font-size: 12px;
     font-weight: 700;
   }
@@ -93,12 +91,6 @@
     grid-row: 2/3;
 
     font-weight: 500;
-  }
-}
-
-.order-item__btn-price {
-  @include to($lg - 1px) {
-    grid-column: 3/4;
   }
 }
 
@@ -162,7 +154,7 @@
 
 .order-item__short-info {
   display: grid;
-  margin: 0  10px;
+  margin: 0 10px;
   padding: 10px 0;
 
   border-top: 1px solid $dark-gray;
@@ -174,7 +166,7 @@
   @include lg-block {
     grid-template-columns: 1fr 1fr auto;
     margin: 0;
-    padding: 0  20px;
+    padding: 0 20px;
 
     border-top: 0;
 
@@ -198,7 +190,7 @@
 .order-item__box {
   display: grid;
   grid-template-columns: auto 1fr 0.5fr auto;
-  padding: 0  10px;
+  padding: 0 10px;
 
   font-size: 10px;
   font-weight: 500;
@@ -209,7 +201,7 @@
   @include lg-block {
     grid-template-columns: auto 1fr 0.5fr 0.2fr 0.5fr 0.5fr 1fr;
     align-items: center;
-    padding: 0  20px;
+    padding: 0 20px;
 
     font-size: 14px;
     line-height: 17px;
@@ -257,7 +249,7 @@
 .order-item__footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0  10px;
+  margin: 0 10px;
   padding: 10px 0 20px;
 
   border-top: 1px solid $dark-gray;
@@ -271,7 +263,7 @@
 
   @include lg-block {
     grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 0.5fr 1fr;
-    margin: 0  20px;
+    margin: 0 20px;
     padding: 16px 0;
 
     font-size: 14px;
@@ -303,7 +295,7 @@
   align-items: center;
   height: 17px;
   margin-top: 5px;
-  padding: 0  10px;
+  padding: 0 10px;
 
   border-radius: 5px;
 

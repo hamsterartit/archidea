@@ -10,7 +10,7 @@ const video = function () {
         videos[i].classList.add('_active');
       } else {
         videos[i].pause();
-          videos[i].classList.remove('_active');
+        videos[i].classList.remove('_active');
       }
     });
   });

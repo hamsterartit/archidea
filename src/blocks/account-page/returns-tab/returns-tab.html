@@ -52,13 +52,15 @@
       <div class="returns__photo field">
         <span class="field__lbl">Фото товара</span>
         <label class="photo-thumbs" for="photo-thumbs">
-          <input type="file" multiple id="photo-thumbs" />
-          <span class="photo-thumbs__media">
+          <input type="file" multiple id="photo-thumbs" data-photo-input />
+          <div class="photo-thumbs__inner" data-photo-box>
+            <span class="photo-thumbs__media">
             <img class="photo-thumbs__icon" src="./img/photo.png" alt="" loading="lazy" />
           </span>
-          <span class="photo-thumbs__media">
+            <span class="photo-thumbs__media">
             <img class="photo-thumbs__icon" src="./img/photo.png" alt="" loading="lazy" />
           </span>
+          </div>
         </label>
       </div>
     </div>

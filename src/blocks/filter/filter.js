@@ -5,9 +5,9 @@ const faq = function () {
   let opened;
 
   btns.forEach((btn, i) => {
-    btn.addEventListener("click", function() {
+    btn.addEventListener('click', function () {
       const panel = this.nextElementSibling;
-      if(opened) {
+      if (opened) {
         opened.classList.remove('faq__item--active');
         const openedPanel = opened.querySelector('[data-accordion-content]');
         openedPanel.style.maxHeight = null;
@@ -16,11 +16,11 @@ const faq = function () {
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
       } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.maxHeight = panel.scrollHeight + 'px';
       }
       opened = accordion[i];
     });
-  })
+  });
 };
 
 export default faq;

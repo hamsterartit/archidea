@@ -4,18 +4,15 @@
 
 .ready-projects-slider__slide {
   width: 120px;
-
-  @include md-block {
-    width: 350px;
-  }
-}
-
-.ready-projects-slider__slide {
   overflow: hidden;
 
   border-radius: 5px;
 
   aspect-ratio: 1/1;
+
+  @include md-block {
+    width: 350px;
+  }
 }
 
 .ready-projects-slider__img {
