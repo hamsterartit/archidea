@@ -40,6 +40,12 @@
     line-height: 36px;
   }
 
+  &:disabled {
+    color: $silver-sand !important;
+    border-bottom-color: transparent !important;
+
+  }
+
   &._active {
     border-bottom-color: $black;
 

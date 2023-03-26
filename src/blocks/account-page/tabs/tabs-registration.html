@@ -1,0 +1,29 @@
+<div class="account-tabs" data-tabs>
+  <div class="account-tabs__controls">
+    <button class="account-tabs__btn" disabled data-tab-btn>
+      <span class="account-tabs__btn-text">Личный кабинет</span>
+      <svg class="account-tabs__icon">
+        <use xlink:href="./icons/icons.svg#icon_home"></use>
+      </svg>
+    </button>
+    <button class="account-tabs__btn" disabled data-tab-btn>Мои данные</button>
+    <button class="account-tabs__btn" disabled data-tab-btn>Мои заказы</button>
+    <button class="account-tabs__btn" disabled data-tab-btn>Мои доставки</button>
+    <button class="account-tabs__btn" disabled data-tab-btn>Возвраты</button>
+  </div>
+  <div class="account-tabs__content _active" data-tabs-content>
+      @@include('../registration.html')
+  </div>
+  <div class="account-tabs__content" data-tabs-content>
+    @@include('../details-tab/details-tab.html')
+  </div>
+  <div class="account-tabs__content" data-tabs-content>
+    @@include('../orders-tab/orders-tab.html')
+  </div>
+  <div class="account-tabs__content" data-tabs-content>
+    @@include('../orders-tab/delivery-tab.html')
+  </div>
+  <div class="account-tabs__content" data-tabs-content>
+    @@include('../returns-tab/returns-tab.html')
+  </div>
+</div>

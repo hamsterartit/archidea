@@ -101,3 +101,52 @@
     height: 24px;
   }
 }
+
+.login {
+  position: relative;
+
+  @include lg-block {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 40px;
+  }
+
+  .popup__inner {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.login__mobile {
+  margin: 20px auto 0 auto;
+  display: block;
+
+  @include lg-block {
+    display: none;
+  }
+
+}
+
+.login__desktop {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  @include to($lg - 1px) {
+    display: none;
+  }
+
+}
+
+.login__icon {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  @include to($lg - 1px) {
+    display: none;
+  }
+}

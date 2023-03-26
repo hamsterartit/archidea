@@ -1,0 +1,23 @@
+<div class="login">
+  <svg class="login__icon">
+    <use xlink:href="./icons/icons.svg#icon_user"></use>
+  </svg>
+  <div class="popup__inner">
+    <h3 class="popup__title">Вход</h3>
+    <form class="popup__form" data-popup-form>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Эл. почта / Телефон*" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Пароль" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Вход</button>
+    </form>
+    <p class="popup__hint">*введите email или телефон без пробелов начиная с +7, пример: +79003001020</p>
+    <div class="popup__actions">
+      <a href="archidea/account-registration.html" class="btn btn--lg btn--full">Регистрация</a>
+    </div>
+    <button class="popup__action popup__action--grey login__mobile" data-popup-open="password-popup">Забыли пароль?</button>
+  </div>
+  <button class="popup__action popup__action--grey login__desktop" data-popup-open="password-popup">Забыли пароль?</button>
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archidea</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    @@include('./blocks/header/header.html')
+    <main>
+      <div class="page-wrapper">
+          <div class=" container container--sm">
+              @@include('./blocks/breadcrumbs/breadcrumbs.html', {
+              'links': {
+              'list': [
+              {'name': 'Главная', 'href': '/'},
+              {'name': 'Регистрация', 'href': ''},
+              ]
+              }
+              })
+              @@include('./blocks/account-page/tabs/tabs-registration.html')
+          </div>
+          @@include('./blocks/question-block/subscribe-block.html')
+
+      </div>
+
+    </main>
+    @@include('./blocks/footer/footer.html')
+    @@include('./blocks/popup/login-popup.html')
+    @@include('./blocks/popup/registration-popup.html')
+    @@include('./blocks/popup/password-popup.html')
+    @@include('./blocks/popup/personal-popup.html')
+    @@include('./blocks/popup/company-popup.html')
+    @@include('./blocks/popup/delivery-popup.html')
+    @@include('./blocks/popup/phone-popup.html')
+    @@include('./blocks/popup/saved-phone-popup.html')
+    @@include('./blocks/popup/confirm-phone-popup.html')
+    @@include('./blocks/popup/success-confirm-popup.html')
+    @@include('./blocks/popup/mail-popup.html')
+    @@include('./blocks/popup/saved-mail-popup.html')
+    @@include('./blocks/popup/confirm-mail-popup.html')
+    @@include('./blocks/popup/change-password-popup.html')
+    @@include('./blocks/popup/success-password-popup.html')
+    @@include('./blocks/popup/call-popup.html')
+    @@include('./blocks/popup/city-popup.html')
+
+  </body>
+</html>
