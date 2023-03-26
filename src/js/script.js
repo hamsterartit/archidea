@@ -1,5 +1,6 @@
 import header from '../blocks/header/header';
 import search from '../blocks/header/search/search';
+import ellipsis from './ellipsis';
 import tabs from './tabs';
 import file from './file';
 import photo from './photo';
@@ -15,27 +16,7 @@ import production from '../blocks/about-page/production/production';
 import categoriesFilter from '../blocks/category-page/categories-filter/categories-filter';
 
 document.addEventListener('DOMContentLoaded', () => {
-  /* function createLineBreaks(text) {
-    text = new Array(text);
-    let lastIndex = 0;
-    while (text[lastIndex].length > 42) {
-      const temp = text[lastIndex].split(/(?=(?<!.{42,})(?:(?<=[a-zA-Zа-яА-Я]{2})[a-zA-Zа-яА-Я](?=[a-zA-Zа-яА-Я])| )(?!.*(?<!.{42,})(?:(?<=[a-zA-Zа-яА-Я]{2})[a-zA-Zа-яА-Я](?=[a-zA-Zа-яА-Я])| ))) ?/);
-      text[lastIndex] = temp[0];
-      text[lastIndex + 1] = temp[1];
-      lastIndex++;
-    }
-    console.log('text', text);
-    return text.join("\n");
-  }
-
-  const hyphen = document.querySelectorAll('.hyphen');
-
-  hyphen.forEach(item => {
-    const text = createLineBreaks(item.innerHTML);
-    item.innerHTML = text;
-    console.log(item.innerHTML);
-  })*/
-
+  ellipsis();
   file();
   photo();
   header();
@@ -52,3 +33,31 @@ document.addEventListener('DOMContentLoaded', () => {
   readyProjects();
   popup();
 });
+
+(function ($) {
+  $.fn.hyphenates = function () {
+    var e = '[абвгдеёжзийклмнопрстуфхцчшщъыьэюя]';
+    var t = '[аеёиоуыэюя]';
+    var n = '[бвгджзклмнпрстфхцчшщ]';
+    var r = '[йъь]';
+    var i = '­';
+    var s = new RegExp('(' + r + ')(' + e + e + ')', 'ig');
+    var o = new RegExp('(' + t + ')(' + t + e + ')', 'ig');
+    var u = new RegExp('(' + t + n + ')(' + n + t + ')', 'ig');
+    var a = new RegExp('(' + n + t + ')(' + n + t + ')', 'ig');
+    var f = new RegExp('(' + t + n + ')(' + n + n + t + ')', 'ig');
+    var l = new RegExp('(' + t + n + n + ')(' + n + n + t + ')', 'ig');
+    this.each(function () {
+      var e = $(this).html();
+      e = e.replace(s, '$1' + i + '$2');
+      e = e.replace(o, '$1' + i + '$2');
+      e = e.replace(u, '$1' + i + '$2');
+      e = e.replace(a, '$1' + i + '$2');
+      e = e.replace(f, '$1' + i + '$2');
+      e = e.replace(l, '$1' + i + '$2');
+      $(this).html(e);
+    });
+  };
+
+  $('.hyphen').hyphenates();
+})(jQuery);

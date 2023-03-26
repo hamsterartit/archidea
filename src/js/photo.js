@@ -4,14 +4,16 @@ const photo = function () {
 
   let files = [];
 
-  photoInput.addEventListener('change', function () {
-    files = [...files, ...photoInput.files];
-    for (let i = 0; i < files.length; i++) {
-      const fileReader = new FileReader();
-      photoBoxes.innerHTML = '';
-      attachPhoto(files[i], fileReader);
-    }
-  });
+  if(photoInput) {
+    photoInput.addEventListener('change', function () {
+      files = [...files, ...photoInput.files];
+      for (let i = 0; i < files.length; i++) {
+        const fileReader = new FileReader();
+        photoBoxes.innerHTML = '';
+        attachPhoto(files[i], fileReader);
+      }
+    });
+  }
 
   function attachPhoto(file, fileReader, box = null) {
     fileReader.readAsDataURL(file);
