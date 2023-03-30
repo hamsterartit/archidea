@@ -1,5 +1,10 @@
 .categories-filter {
   margin-bottom: 150px;
+  display: none;
+
+  @include lg-block {
+    display: block;
+  }
 }
 
 .categories-filter__inner {

@@ -1,109 +1,174 @@
-.faq {
-  padding-top: 70px;
-
-  @include lg-block {
-    padding-top: 162px;
-  }
+.filter {
 }
 
-.faq__inner {
-  display: grid;
-
-  gap: 20px;
-}
-
-.faq__item {
-  border: 1px solid $black;
-  border-radius: 5px;
-
-  color: $black;
-
-  &--active {
-    background-color: $raisin-black;
-
-    color: $white;
-  }
-}
-
-.faq__btn {
+.filter__head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 8px 20px;
+}
 
-  color: currentcolor;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 25px;
-  text-align: left;
+.filter__title {
+  @include to($lg - 1px) {
+    display: none;
+}
+}
 
-  gap: 16px;
+.filter__clear-btn {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+
+  color: $silver-sand;
+  border: 1px solid $silver-sand;
+  border-radius: 3px;height: 24px;
+  padding: 3px 8px;
+}
+
+.filter__inner {
+  margin-top: 24px;
+  display: grid;
+  gap: 20px;
 
   @include lg-block {
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 48px;
+    gap: 12px;
+    padding-left: 20px;
   }
 }
 
-.faq__btn-icon-wrap {
-  position: relative;
-  flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-}
+.filter__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
 
-.faq__btn-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45px;
-  height: 45px;
+  color: $black;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
 
-  transition: opacity 0.1s ease-in-out;
+  gap: 20px;
 
-  opacity: 1;
-
-  color: currentcolor;
-
-  &--minus {
-    opacity: 0;
-  }
-
-  .faq__item--active & {
-    &--plus {
-      opacity: 0;
-    }
-
-    &--minus {
-      opacity: 1;
-    }
+  @include lg-block {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
   }
 }
 
-.faq__content {
+.filter__icon {
+  width: 9px;
+  height: 9px;
+
+  transition: transform 0.2s ease-out;
+
+  color: $silver-sand;
+
+  .filter__btn--active & {
+    transform: rotate(90deg);
+  }
+}
+
+.filter__dropdown {
   max-height: 0;
   overflow: hidden;
 
   transition: max-height 0.2s ease-out;
+
+  &--active {
+    margin: 20px 0;
+  }
 }
 
-.faq__info {
+.filter__link {
+  display: block;
+
+  color: $black;
+}
+
+.range-values {
   display: flex;
-  padding: 16px 20px;
+  gap: 4px;
+  margin-top: 10px;
+}
 
-  gap: 60px;
+.range-values__item {
+  height: 33px;
+  background-color: $bright-gray;
+  padding: 6px 10px;font-size: 16px;
+  line-height: 19px;
+  color: $dark-gray;
 
   @include lg-block {
-    width: 70%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &::before {
+    content: attr(data-lbl);
+    font-weight: 500;
+    color: $black;
   }
 }
 
-.faq__img {
-  display: none;
+.filter__variants {
+  display: flex;
+  padding: 0 16px;
 
-  @include lg-block {
-    display: block;
+  gap: 8px;
+
+  input {
+    display: none;
   }
+}
+
+.om-sliderrange {
+  min-height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.om-sliderrange-range {
+  height: 2px;
+  position: relative;
+  margin: 8px 16px;
+}
+
+.om-sliderrange-display {
+  display: none;
+  justify-content: space-around;
+  margin: -6px 10% 0;
+  font-size: 12px;
+}
+
+.om-sliderrange-range:before {
+  display: block;
+  content: '';
+  height: 2px;
+  border-radius: 2px;
+  background: $black;
+}
+
+.om-sliderrange-range-indicator {
+  height: 2px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.om-sliderrange-button-start,
+.om-sliderrange-button-end {
+  cursor: pointer;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: $black;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: visible;
 }

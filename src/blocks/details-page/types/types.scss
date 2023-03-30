@@ -53,6 +53,18 @@
     background-repeat: no-repeat;
   }
 
+  &--bordered {
+    border: 1px solid transparent;
+
+    :checked & {
+      border-color: $black;
+    }
+
+    :checked + &::before {
+      display: none;
+    }
+  }
+
   &--beige {
     background-color: #d69563;
   }

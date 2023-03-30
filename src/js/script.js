@@ -12,8 +12,10 @@ import faq from './faq';
 import card from '../blocks/card/card';
 import slider from '../blocks/details-page/slider/slider';
 import popup from '../blocks/popup/popup';
+import filter from '../blocks/filter/filter';
 import production from '../blocks/about-page/production/production';
 import categoriesFilter from '../blocks/category-page/categories-filter/categories-filter';
+import sortItems from '../blocks/category-page/sort/sort';
 
 document.addEventListener('DOMContentLoaded', () => {
   ellipsis();
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   video();
   faq();
   categoriesFilter();
+  filter();
   card();
   slider();
   production();
@@ -32,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   articles();
   readyProjects();
   popup();
+  sortItems();
 });
 
 (function ($) {
