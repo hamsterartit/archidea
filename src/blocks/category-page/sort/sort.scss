@@ -10,6 +10,7 @@
   line-height: 17px;
   position: relative;
   align-items: center;
+  gap: 8px;
 
   @include to($lg - 1px) {
     > span {
@@ -18,28 +19,50 @@
   }
 }
 
+.sort-by__inner {
+  padding: 8px 16px;
+  position: relative;
+
+  transition: background-color 0.2s ease-out;
+
+  &._active {
+    border-radius: 3px;
+
+    background-color: $bright-gray;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 25%);
+  }
+}
+
 .sort-by__dropdown {
   position: absolute;
   top: 32px;
   right: 0;
-  padding: 10px;
-  background-color: $white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 25%);
-  border-radius: 3px;
+  padding: 8px 16px 16px;
   z-index: 2;
   display: none;
   white-space: nowrap;
-  gap: 8px;
+  gap: 16px;
+  width: 100%;
+  background-color: $bright-gray;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 25%);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 
-  &--active {
+  .sort-by__inner._active & {
     display: grid;
   }
+}
+
+.sort-by__type {
+  padding: 0;
+  text-align: left;
 }
 
 .sort-by__btn {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
+  padding: 0;
 
   @include lg-block {
     font-weight: 700;
@@ -52,7 +75,7 @@
 
   transition: transform 0.2s ease-out;
 
-  .sort-by__btn--active & {
+  .sort-by__inner._active & {
     transform: rotate(90deg);
   }
 }

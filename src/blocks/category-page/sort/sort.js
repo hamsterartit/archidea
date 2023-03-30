@@ -1,9 +1,9 @@
 const sortItems = function () {
+  const box = document.querySelector('[data-sort-box]');
   const btn = document.querySelector('[data-sort-btn]');
-  const dropdown = document.querySelector('[data-sort-dropdown]');
 
   btn.addEventListener('click', function () {
-    dropdown.classList.toggle('sort-by__dropdown--active');
+    box.classList.toggle('_active');
   });
 
   const filterBtn = document.querySelector('[data-mobile-filter-btn]');
