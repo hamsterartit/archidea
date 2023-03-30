@@ -22,6 +22,21 @@ const header = function () {
       header.classList.remove('header--dark');
     }
   }
+
+  const mobileLinks = document.querySelectorAll('[data-menu-list-num]');
+  const mobileMenu = document.querySelectorAll('[data-menu-list]');
+
+  mobileLinks.forEach((link, i) => {
+    link.addEventListener('click', function () {
+      mobileMenu.forEach((menu) => {
+        menu.setAttribute('hidden', '');
+      });
+
+      const menuNum = link.dataset.menuListNum;
+      const menuToOpen = document.querySelector(`[data-menu-list="${menuNum}"]`);
+      menuToOpen.removeAttribute('hidden');
+    });
+  });
 };
 
 export default header;

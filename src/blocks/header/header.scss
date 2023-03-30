@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 100;
   height: 70px;
 
   transition: background-color 0.3s ease-in-out;
@@ -15,29 +15,50 @@
     color: $black;
   }
 
-  &--active {
-    background-color: $raisin-black;
+  @include to($xl - 1px) {
+    &--active {
+      &.header--mobile-dark {
+        background-color: $raisin-black;
+
+        color: $white;
+      }
+
+      &.header--mobile-light {
+        background-color: $white;
+
+        color: $raisin-black;
+      }
+    }
   }
 }
 
 .header__menu {
-  display: flex;
   position: fixed;
   top: 44px;
   bottom: 0;
   left: -200%;
-  align-items: center;
   width: 100%;
-  padding-top: 26px;
+  padding: 56px 20px;
+  overflow-y: auto;
 
   transition: left 0.3s ease-in-out;
 
-  background-color: $raisin-black;
-
   gap: 60px;
+
+  @include to($xl - 1px) {
+    .header--mobile-dark & {
+      background-color: $raisin-black;
+    }
+
+    .header--mobile-light & {
+      background-color: $white;
+    }
+  }
 
   @include xl-block {
     position: relative;
+    padding: 26px 0 0;
+    overflow: hidden;
 
     background-color: transparent;
 
@@ -52,6 +73,116 @@
   &--active {
     left: 0;
   }
+}
+
+.header__menu-inner {
+  display: flex;
+  align-items: center;
+
+  @include to($xl - 1px) {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: flex-start;
+    padding: 26px 0;
+
+    border-top: 1px solid currentcolor;
+
+    gap: 26px;
+  }
+}
+
+.header__menu-list {
+  padding: 0 10px 26px 70px;
+
+  @include xl-block {
+    display: none;
+  }
+}
+
+.header__menu-social {
+  padding-top: 26px;
+
+  border-top: 1px solid currentcolor;
+
+  @include xl-block {
+    display: none;
+  }
+}
+
+.header-social {
+  display: flex;
+  justify-content: space-between;
+
+  @include sm-block {
+    justify-content: flex-start;
+
+    gap: 80px;
+  }
+}
+
+.header-social__item {
+  display: flex;
+
+  gap: 20px;
+
+  @include lg-block {
+    gap: 32px;
+  }
+}
+
+.header-social__link {
+  width: 36px;
+  height: 36px;
+
+  color: currentcolor;
+}
+
+.mobile-main-nav {
+  display: grid;
+
+  gap: 16px;
+}
+
+.mobile-main-nav-link {
+  display: flex;
+  align-items: center;
+
+  color: currentcolor;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  gap: 16px;
+
+  &--sm {
+    text-transform: none;
+  }
+}
+
+.mobile-main-nav-link__icon {
+  width: 9px;
+  height: 9px;
+
+  color: currentcolor;
+}
+
+.mobile-back-btn {
+  display: flex;
+  align-items: center;
+  margin-left: -64px;
+
+  color: currentcolor;
+  font-size: 14px;
+  line-height: 17px;
+
+  gap: 32px;
+}
+
+.mobile-back-btn__icon {
+  width: 24px;
+  height: 24px;
+
+  color: currentcolor;
 }
 
 .header__box {
@@ -77,8 +208,14 @@
     gap: 60px;
   }
 
-  &--active {
-    color: $white;
+  @include to($xl - 1px) {
+    .header--mobile-dark &--active {
+      color: $white;
+    }
+
+    .header--mobile-light &--active {
+      color: $raisin-black;
+    }
   }
 }
 
@@ -115,6 +252,30 @@
   gap: 16px;
 }
 
+.header__btn {
+  position: relative;
+
+  @include to($xl - 1px) {
+    padding-top: 22px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    &::before {
+      content: attr(data-lbl);
+
+      position: absolute;
+      top: 0;
+      left: 37px;
+
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+    }
+  }
+}
+
 .header__time,
 .header__btn {
   font-weight: 700;
@@ -123,10 +284,47 @@
 .header__call-btn {
   font-weight: 900;
   text-transform: uppercase;
+
+  @include to($xl - 1px) {
+    display: none;
+  }
 }
 
 .header__time {
+  position: relative;
   margin-left: auto;
+
+  @include to($xl - 1px) {
+    grid-column: 2/3;
+    padding-top: 22px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    .header__icon {
+      display: none;
+    }
+
+    &::before {
+      content: attr(data-lbl);
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+    }
+  }
+}
+
+.header-mobile-call {
+  @include to($xl - 1px) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
 
 .header__icon {

@@ -1,26 +1,159 @@
-<header class="header" data-header>
+<!-- To make mobile header light - remove header--mobile-dark
+and add class header--mobile-light -->
+
+<header class="header header--mobile-dark" data-header>
   <div class="container container--lg">
     <div class="header__menu" data-header-menu>
-      <button class="header__btn text-xsm" data-popup-open="city-popup">
-        <svg class="header__icon">
-          <use xlink:href="./icons/icons.svg#icon_triangle-red"></use>
-        </svg>
-        Москва
-      </button>
+      <div class="header__menu-list">
+        <div class="mobile-main-nav" data-menu-list="1">
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="2"
+            >КАТАЛОГ
+            <svg class="mobile-main-nav-link__icon">
+              <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+            </svg>
+          </a>
+          <a class="mobile-main-nav-link" href="/archidea/content.html">Гарантия</a>
+          <a class="mobile-main-nav-link" href="/archidea/content.html">Доставка и оплата</a>
+          <a class="mobile-main-nav-link" href="/archidea/contacts.html">Контакты</a>
+          <a class="mobile-main-nav-link" href="/archidea/feedback.html">Отзывы</a>
+        </div>
+        <div class="mobile-main-nav" hidden data-menu-list="2">
+          <button class="mobile-back-btn" data-menu-list-num="1">
+            <svg class="mobile-back-btn__icon">
+              <use xlink:href="./icons/icons.svg#icon_arrow-right"></use>
+            </svg>
+            Назад
+          </button>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">УЛИЧНЫЕ СКАМЕЙКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">УРНЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">СТОЛЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ПАРКОВОЧНЫЕ СТОЛБИКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ЗАБОРЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">НАВЕСЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ИНДИВИДУАЛЬНЫЕ МАФ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ДИЗАЙН</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">БЕСЕДКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ЦВЕТНИКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ВЕЛОПАРКОВКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">КОНТЕЙНЕРНЫЕ БОКСЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ЛЕЖАКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">НАВИГАЦИИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">КОРЗИНЫ ДЛЯ КОНДИЦИОНЕРОВ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ПОДПОРНЫЕ СТЕНКИ</a>
+        </div>
+        <div class="mobile-main-nav" hidden data-menu-list="3">
+          <button class="mobile-back-btn" data-menu-list-num="2">
+            <svg class="mobile-back-btn__icon">
+              <use xlink:href="./icons/icons.svg#icon_arrow-right"></use>
+            </svg>
+            Назад
+          </button>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Деревянные скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Металлические скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Парковые скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Садовые скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Скамейки без спинки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Скамейки бетонные </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Скамейки из бетона и дерева </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Скамейки из металла и дерева </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Скамейки кованые </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Скамейки с навесом </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Чугунные скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Скамейки для вокзалов </a>
+        </div>
+        <div class="mobile-main-nav" hidden data-menu-list="4">
+          <button class="mobile-back-btn" data-menu-list-num="3">
+            <svg class="mobile-back-btn__icon">
+              <use xlink:href="./icons/icons.svg#icon_arrow-right"></use>
+            </svg>
+            Назад
+          </button>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Новая Волна»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Фестиваль»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Дуга» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Лидия» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Ладья» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Лондон» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Глория» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Амфитеатр»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Владивосток»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Эконом» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Техно» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Ботаника» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Дели» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Природа» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Биштайн» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Набережная»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Анапа» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Пенек» </a>
+        </div>
+      </div>
+      <div class="header__menu-inner">
+        <button class="header__btn text-xsm" data-popup-open="city-popup" data-lbl="Город:">
+          <svg class="header__icon">
+            <use xlink:href="./icons/icons.svg#icon_triangle-red"></use>
+          </svg>
+          Москва
+        </button>
 
-      <p class="header__time text-xsm">
-        <svg class="header__icon">
-          <use xlink:href="./icons/icons.svg#icon_circle-green"></use>
-        </svg>
-        Будни с 8:00 до 21:00 • Выходные с 9:00 до 17:00
-      </p>
+        <p class="header__time text-xsm" data-lbl="Режим работы:">
+          <svg class="header__icon">
+            <use xlink:href="./icons/icons.svg#icon_circle-green"></use>
+          </svg>
+          Будни с 8:00 до 21:00 • Выходные с 9:00 до 17:00
+        </p>
 
-      <button class="header__call-btn text-sm" type="button" data-popup-open="call-popup">
-        <svg class="header__icon">
-          <use xlink:href="./icons/icons.svg#icon_circle-yellow"></use>
-        </svg>
-        заказать звонок
-      </button>
+        <button class="header__call-btn text-sm" type="button" data-popup-open="call-popup">
+          <svg class="header__icon">
+            <use xlink:href="./icons/icons.svg#icon_circle-yellow"></use>
+          </svg>
+          заказать звонок
+        </button>
+        <a class="nav-link nav-link--desktop-hide header-mobile-call" href="tel:78000000000">+7 (800) 000 00 00</a>
+      </div>
+      <div class="header__menu-social">
+        <div class="header-social">
+          <div class="header-social__item">
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_youtube"></use>
+              </svg>
+            </a>
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_vk"></use>
+              </svg>
+            </a>
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="header-social__item">
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_telegram"></use>
+              </svg>
+            </a>
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_whatsapp"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="header__box" data-header-box>
       <button class="menu-btn" data-header-menu-btn>
@@ -89,7 +222,7 @@
         </svg>
       </a>
 
-      <a class="nav-link nav-link--mob-hide text-sm" href="">
+      <a class="nav-link nav-link--mob-hide text-sm" href="/archidea/categories.html">
         <svg class="nav-link__icon">
           <use xlink:href="./icons/icons.svg#icon_burger"></use>
         </svg>
@@ -101,16 +234,16 @@
       <nav class="nav">
         <ul class="nav__list">
           <li>
-            <a class="nav-link text-sm" href="">Гарантия</a>
+            <a class="nav-link text-sm" href="/archidea/content.html">Гарантия</a>
           </li>
           <li>
-            <a class="nav-link text-sm" href="">Доставка и оплата</a>
+            <a class="nav-link text-sm" href="/archidea/content.html">Доставка и оплата</a>
           </li>
           <li>
-            <a class="nav-link text-sm" href="">Контакты</a>
+            <a class="nav-link text-sm" href="/archidea/contacts.html">Контакты</a>
           </li>
           <li>
-            <a class="nav-link text-sm" href="">Отзывы</a>
+            <a class="nav-link text-sm" href="/archidea/feedback.html">Отзывы</a>
           </li>
         </ul>
       </nav>

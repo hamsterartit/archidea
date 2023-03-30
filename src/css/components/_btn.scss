@@ -64,4 +64,8 @@ button {
   padding: 0;
 
   color: $silver-sand;
+
+  &--active {
+    color: $black;
+  }
 }

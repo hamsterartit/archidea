@@ -65,7 +65,6 @@ const popup = function () {
 
   function rateStar(event) {
     const starId = event.target.id;
-    console.log(event.target);
     const activeStars = document.querySelectorAll('.rating__star._active');
 
     if (activeStars.length > 0) {
