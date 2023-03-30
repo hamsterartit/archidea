@@ -41,9 +41,9 @@
   }
 
   &:disabled {
-    color: $silver-sand !important;
     border-bottom-color: transparent !important;
 
+    color: $silver-sand !important;
   }
 
   &._active {

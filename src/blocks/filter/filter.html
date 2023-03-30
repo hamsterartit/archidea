@@ -1,127 +1,246 @@
 <div class="filter">
-    <div class="filter__head">
-        <h4 class="filter__title text-lg">Фильтры</h4>
-        <button class="filter__clear-btn">
-            отменить
-            <svg class="filter__icon">
-                <use xlink:href="./icons/icons.svg#icon_cross"></use>
-            </svg>
-        </button>
+  <div class="filter__head">
+    <h4 class="filter__title text-lg">Фильтры</h4>
+    <button class="filter__clear-btn">
+      отменить
+      <svg class="filter__icon">
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="filter__inner">
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Цена
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+        <input
+          type="range"
+          name="pieces"
+          id="inputPieces"
+          multiple
+          value="1590"
+          min="0"
+          max="3000"
+          unit=""
+          style="width: 250px"
+        />
+
+        <div class="range-values">
+          <span class="range-values__item" data-lbl="от:"><span data-range-from>0</span> ₽</span>
+          <span class="range-values__item" data-lbl="до:"><span data-range-to>0</span> ₽</span>
+        </div>
+      </div>
     </div>
-    <div class="filter__inner">
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Цена
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-
-                <input type="range" name="pieces" id="inputPieces" multiple value="1590" min="0" max="3000" unit="" style="width: 250px">
-
-
-                <div class="range-values">
-                    <span class="range-values__item" data-lbl="от:"><span data-range-from>0</span> ₽</span>
-                    <span class="range-values__item" data-lbl="до:"><span data-range-to>0</span> ₽</span>
-                </div>
-            </div>
-
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Акции
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+        <div class="filter__ver-variants">
+          <div class="custom-control">
+            <input type="checkbox" name="sale" id="sale-1" checked />
+            <label class="custom-control__lbl custom-control__lbl--text" for="sale-1">
+              Деревянные скамейки</label
+            >
+          </div>
+          <div class="custom-control">
+            <input type="checkbox" name="sale" id="sale-2" />
+            <label class="custom-control__lbl custom-control__lbl--text" for="sale-2">
+              Металлические скамейки</label
+            >
+          </div>
+          <div class="custom-control">
+            <input type="checkbox" name="sale" id="sale-3"  />
+            <label class="custom-control__lbl custom-control__lbl--text" for="sale-3">
+              Садовые скамейки</label
+            >
+          </div>
+          <div class="custom-control">
+            <input type="checkbox" name="sale" id="sale-4"  />
+            <label class="custom-control__lbl custom-control__lbl--text" for="sale-4">
+              Скамейки бетонные</label
+            >
+          </div>
         </div>
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Акции
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-
-            </div>
-        </div>
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Высота
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-
-            </div>
-        </div>
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Диаметр
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-
-            </div>
-        </div>
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Вес
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-
-            </div>
-        </div>
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Текстура
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-
-            </div>
-        </div>
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Цвет
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-                <div class="filter__variants">
-                    <input type="radio" name="color" id="color-1" checked>
-                    <label class="type-radio type-radio--bordered type-radio--white" for="color-1"></label>
-                    <input type="radio" name="color" id="color-2">
-                    <label class="type-radio type-radio--bordered type-radio--black" for="color-2"></label>
-                    <input type="radio" name="color" id="color-3">
-                    <label class="type-radio type-radio--bordered type-radio--grey-dark" for="color-3"></label>
-                </div>
-            </div>
-        </div>
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Материал
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-
-            </div>
-        </div>
-        <div>
-            <button class="filter__btn" data-filter-btn>
-                Покрытие
-                <svg class="filter__icon">
-                    <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
-                </svg>
-            </button>
-            <div class="filter__dropdown" data-filter-dropdown>
-
-            </div>
-        </div>
+      </div>
     </div>
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Высота
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+        <div class="filter__ver-variants">
+          <div class="custom-control">
+            <input type="checkbox" name="height" id="height-1" checked />
+            <label class="custom-control__lbl" for="height-1">
+              <span class="custom-control__input"></span>
+              0000 мм</label
+            >
+          </div>
+          <div class="custom-control">
+            <input type="checkbox" name="height" id="height-2" />
+            <label class="custom-control__lbl" for="height-2">
+              <span class="custom-control__input"></span>
+              0000 мм</label
+            >
+          </div>
+          <div class="custom-control">
+            <input type="checkbox" name="height" id="height-3" />
+            <label class="custom-control__lbl" for="height-3">
+              <span class="custom-control__input"></span>
+              0000 мм</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Диаметр
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+        <div class="filter__ver-variants">
+          <div class="custom-control">
+            <input type="radio" name="diameter" id="diameter-1" checked />
+            <label class="custom-control__lbl" for="diameter-1">
+              <span class="custom-control__input"></span>
+              0000 мм</label>
+          </div>
+          <div class="custom-control">
+            <input type="radio" name="height" id="diameter-2" />
+            <label class="custom-control__lbl" for="diameter-2">
+              <span class="custom-control__input"></span>
+              0000 мм</label>
+          </div>
+          <div class="custom-control">
+            <input type="radio" name="height" id="diameter-3" />
+            <label class="custom-control__lbl" for="diameter-3">
+              <span class="custom-control__input"></span>
+              0000 мм</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Вес
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+
+        <div class="filter__ver-variants">
+          <div class="custom-control">
+            <input type="checkbox" name="weight" id="weight-1" checked />
+            <label class="custom-control__lbl custom-control__lbl--text" for="weight-1">
+              00 кг</label
+            >
+          </div>
+          <div class="custom-control">
+            <input type="checkbox" name="weight" id="weight-2" />
+            <label class="custom-control__lbl custom-control__lbl--text" for="weight-2">
+              00 кг</label
+            >
+          </div>
+          <div class="custom-control">
+            <input type="checkbox" name="weight" id="weight-3"  />
+            <label class="custom-control__lbl custom-control__lbl--text" for="weight-3">
+              00 кг</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Текстура
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+        <div class="filter__variants">
+          <input type="radio" name="texture" id="texture-1" checked />
+          <label class="type-radio type-radio--lg type-radio--bordered" for="texture-1">
+            <img src="./img/type5.jpg" alt="" />
+          </label>
+          <input type="radio" name="texture" id="texture-2" />
+          <label class="type-radio type-radio--lg type-radio--bordered" for="texture-2">
+            <img src="./img/type6.jpg" alt="" />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Цвет
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+        <div class="filter__variants">
+          <input type="radio" name="color" id="color-1" checked />
+          <label class="type-radio type-radio--bordered type-radio--white" for="color-1"></label>
+          <input type="radio" name="color" id="color-2" />
+          <label class="type-radio type-radio--bordered type-radio--black" for="color-2"></label>
+          <input type="radio" name="color" id="color-3" />
+          <label class="type-radio type-radio--bordered type-radio--grey-dark" for="color-3"></label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Материал
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+        <div class="filter__variants">
+          <input type="radio" name="material" id="material-1" checked />
+          <label class="type-radio type-radio--lg type-radio--bordered" for="material-1">
+            <img src="./img/type5.jpg" alt="" />
+          </label>
+          <input type="radio" name="material" id="material-2" />
+          <label class="type-radio type-radio--lg type-radio--bordered" for="material-2">
+            <img src="./img/type6.jpg" alt="" />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="filter__btn" data-filter-btn>
+        Покрытие
+        <svg class="filter__icon">
+          <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+        </svg>
+      </button>
+      <div class="filter__dropdown" data-filter-dropdown>
+        <div class="filter__variants">
+          <input type="radio" name="cover" id="cover-1" checked />
+          <label class="type-radio type-radio--lg type-radio--bordered" for="cover-1">
+            <img src="./img/type5.jpg" alt="" />
+          </label>
+          <input type="radio" name="cover" id="cover-2" />
+          <label class="type-radio type-radio--lg type-radio--bordered" for="cover-2">
+            <img src="./img/type6.jpg" alt="" />
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

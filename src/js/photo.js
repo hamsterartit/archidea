@@ -4,7 +4,7 @@ const photo = function () {
 
   let files = [];
 
-  if(photoInput) {
+  if (photoInput) {
     photoInput.addEventListener('change', function () {
       files = [...files, ...photoInput.files];
       for (let i = 0; i < files.length; i++) {

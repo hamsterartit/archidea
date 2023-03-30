@@ -106,9 +106,10 @@
   position: relative;
 
   @include lg-block {
-    border: 1px solid #000000;
-    border-radius: 5px;
     padding: 40px;
+
+    border: 1px solid #000;
+    border-radius: 5px;
   }
 
   .popup__inner {
@@ -118,13 +119,12 @@
 }
 
 .login__mobile {
-  margin: 20px auto 0 auto;
   display: block;
+  margin: 20px auto 0;
 
   @include lg-block {
     display: none;
   }
-
 }
 
 .login__desktop {
@@ -135,14 +135,13 @@
   @include to($lg - 1px) {
     display: none;
   }
-
 }
 
 .login__icon {
+  display: block;
   position: absolute;
   top: 40px;
   left: 40px;
-  display: block;
   width: 32px;
   height: 32px;
 

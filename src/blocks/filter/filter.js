@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
 const OmRangeSliderInputValueStyles = {
   DEFAULT_COMMA_SEPARATED: 0,
   PHP_ARRAY: 1,
-  ASP_ARRAY: 2
-}
+  ASP_ARRAY: 2,
+};
 
 function OmRangeSlider(inputElement, inputValueStyle) {
   const that = this;
@@ -26,7 +26,7 @@ function OmRangeSlider(inputElement, inputValueStyle) {
     min: 0,
     max: 10,
     unit: '',
-    inputValueStyle: inputValueStyle
+    inputValueStyle: inputValueStyle,
   };
 
   this.setRange = function (range) {
@@ -52,22 +52,29 @@ function OmRangeSlider(inputElement, inputValueStyle) {
   this.setDebug = function (enabled) {
     debug = !!enabled;
     return that;
-  }
+  };
 
   function initEventSubscriptions() {
     let previousWindowWidth = document.documentElement.clientWidth;
 
-    window.addEventListener('resize', (e) => {
-      if (sliderEventHelper.getActiveButton() === undefined || previousWindowWidth !== document.documentElement.clientWidth.toFixed()) {
-        previousWindowWidth = document.documentElement.clientWidth.toFixed();
-        refreshButtonPositions();
-        refreshRangeIndicator();
-      }
-    }, {passive: false});
+    window.addEventListener(
+      'resize',
+      (e) => {
+        if (
+          sliderEventHelper.getActiveButton() === undefined ||
+          previousWindowWidth !== document.documentElement.clientWidth.toFixed()
+        ) {
+          previousWindowWidth = document.documentElement.clientWidth.toFixed();
+          refreshButtonPositions();
+          refreshRangeIndicator();
+        }
+      },
+      { passive: false },
+    );
 
     const sliderEventHelper = new SliderEventHelper(buttonStart, buttonEnd);
     sliderEventHelper.validateNewPosition = (button, positionX) => {
-      return getValidX(button, positionX)
+      return getValidX(button, positionX);
     };
     sliderEventHelper.onButtonPositionChanged = (button) => {
       updateValues();
@@ -76,7 +83,6 @@ function OmRangeSlider(inputElement, inputValueStyle) {
   }
 
   function initVisuals() {
-
     const visualSliderContainer = document.createElement('div');
     visualSliderContainer.className = input.className;
 
@@ -93,12 +99,18 @@ function OmRangeSlider(inputElement, inputValueStyle) {
     visualSliderButtonStart.role = 'button';
     visualSliderButtonStart.setAttribute('tabindex', '0');
     visualSliderButtonStart.classList.add('om-sliderrange-button-start');
-    visualSliderButtonStart.innerHTML = '<div style="position: relative; height: 100%; width: 100%;"><div style="position: absolute; height: 48px; width: 48px; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%);' + (debug ? ' background: rgba(71,178,71,0.6);' : '') + '"></div></div>';
+    visualSliderButtonStart.innerHTML =
+      '<div style="position: relative; height: 100%; width: 100%;"><div style="position: absolute; height: 48px; width: 48px; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%);' +
+      (debug ? ' background: rgba(71,178,71,0.6);' : '') +
+      '"></div></div>';
     const visualSliderButtonEnd = document.createElement('div');
     visualSliderButtonEnd.role = 'button';
     visualSliderButtonEnd.setAttribute('tabindex', '0');
     visualSliderButtonEnd.classList.add('om-sliderrange-button-end');
-    visualSliderButtonEnd.innerHTML = '<div style="position: relative; height: 100%; width: 100%;"><div style="position: absolute; height: 48px; width: 48px; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%);' + (debug ? '  background: rgba(178,71,71,0.6);' : '') + '"></div></div>';
+    visualSliderButtonEnd.innerHTML =
+      '<div style="position: relative; height: 100%; width: 100%;"><div style="position: absolute; height: 48px; width: 48px; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%);' +
+      (debug ? '  background: rgba(178,71,71,0.6);' : '') +
+      '"></div></div>';
 
     visualSliderRange.appendChild(visualSliderRangeIndicator);
     visualSliderRange.appendChild(visualSliderButtonStart);
@@ -123,7 +135,8 @@ function OmRangeSlider(inputElement, inputValueStyle) {
 
     input.parentNode.insertBefore(visualSliderContainer, input.nextSibling);
 
-    visualSliderButtonEnd.style.left = (visualSliderRange.getBoundingClientRect().width - visualSliderButtonEnd.getBoundingClientRect().width) + 'px';
+    visualSliderButtonEnd.style.left =
+      visualSliderRange.getBoundingClientRect().width - visualSliderButtonEnd.getBoundingClientRect().width + 'px';
 
     elementRange = visualSliderRange;
     buttonStart = visualSliderButtonStart;
@@ -131,15 +144,13 @@ function OmRangeSlider(inputElement, inputValueStyle) {
     rangeIndicator = visualSliderRangeIndicator;
     displayValueStart = visualDisplayValueStart;
     displayValueEnd = visualDisplayValueEnd;
-    settings.min = input.getAttribute('min')
-        ? input.getAttribute('min') : 0;
-    settings.max = input.getAttribute('max')
-        ? input.getAttribute('max') : 10;
+    settings.min = input.getAttribute('min') ? input.getAttribute('min') : 0;
+    settings.max = input.getAttribute('max') ? input.getAttribute('max') : 10;
     settings.unit = input.getAttribute('unit') ?? '';
 
     input.type = 'hidden';
 
-    const range = input.value ? input.value.split(',').map(x => +x.trim()) : [settings.min, settings.max];
+    const range = input.value ? input.value.split(',').map((x) => +x.trim()) : [settings.min, settings.max];
 
     switch (settings.inputValueStyle) {
       default:
@@ -160,10 +171,8 @@ function OmRangeSlider(inputElement, inputValueStyle) {
         break;
     }
 
-    const rangeStart = range[0] && range[0] >= settings.min && range[0] <= settings.max
-        ? range[0] : settings.min;
-    const rangeEnd = range[1] && range[1] >= settings.min && range[1] <= settings.max
-        ? range[1] : settings.max;
+    const rangeStart = range[0] && range[0] >= settings.min && range[0] <= settings.max ? range[0] : settings.min;
+    const rangeEnd = range[1] && range[1] >= settings.min && range[1] <= settings.max ? range[1] : settings.max;
     that.setRange([rangeStart, rangeEnd]);
     refreshButtonPositions();
     refreshRangeIndicator();
@@ -192,14 +201,14 @@ function OmRangeSlider(inputElement, inputValueStyle) {
     const buttonStartWidth = buttonStart.getBoundingClientRect().width;
     const buttonEndWidth = buttonEnd.getBoundingClientRect().width;
 
-    const buttonStartMiddle = Math.round(parseInt(buttonStart.style.left) + (buttonStartWidth / 2));
-    const buttonEndMiddle = Math.round(elementRangeWidth - (parseInt(buttonEnd.style.left) + (buttonEndWidth / 2)));
+    const buttonStartMiddle = Math.round(parseInt(buttonStart.style.left) + buttonStartWidth / 2);
+    const buttonEndMiddle = Math.round(elementRangeWidth - (parseInt(buttonEnd.style.left) + buttonEndWidth / 2));
     rangeIndicator.style.left = buttonStartMiddle + 'px';
     rangeIndicator.style.right = buttonEndMiddle + 'px';
   }
 
   function triggerRangeChangeEvent(range) {
-    const event = new CustomEvent('rangechange', {detail: rangeValue});
+    const event = new CustomEvent('rangechange', { detail: rangeValue });
     input.value = range ? range.join(',') : '';
     input.dispatchEvent(event);
   }
@@ -212,8 +221,8 @@ function OmRangeSlider(inputElement, inputValueStyle) {
     const isFloat = parseFloat(settings.min) % 1 !== 0 || parseFloat(settings.max) % 1 !== 0;
 
     const diffRange = settings.max - settings.min;
-    let resultStart = (diffRange / rangePx * startPx) + parseFloat(settings.min);
-    let resultEnd = (diffRange / rangePx * endPx) + parseFloat(settings.min);
+    let resultStart = (diffRange / rangePx) * startPx + parseFloat(settings.min);
+    let resultEnd = (diffRange / rangePx) * endPx + parseFloat(settings.min);
 
     if (!isFloat) {
       resultStart = +Math.ceil(resultStart);
@@ -251,7 +260,6 @@ function OmRangeSlider(inputElement, inputValueStyle) {
 }
 
 function SliderEventHelper(buttonStart, buttonEnd) {
-
   const that = this;
 
   let x = 0;
@@ -260,7 +268,7 @@ function SliderEventHelper(buttonStart, buttonEnd) {
 
   this.getActiveButton = function () {
     return activeButton;
-  }
+  };
 
   /**
    * Callback that needs to be implemented to check if the position of the currently moved button is within allowed range.
@@ -310,8 +318,7 @@ function SliderEventHelper(buttonStart, buttonEnd) {
 
   function handleButtonRelease(e) {
     isMouseButtonDown = false;
-    if (!activeButton)
-      return;
+    if (!activeButton) return;
 
     x = activeButton.offsetLeft - getXOfMoveEvent(e);
 
@@ -319,8 +326,7 @@ function SliderEventHelper(buttonStart, buttonEnd) {
   }
 
   function handleButtonMove(e) {
-    if (!activeButton || !isMouseButtonDown)
-      return;
+    if (!activeButton || !isMouseButtonDown) return;
 
     e.preventDefault();
     e.stopImmediatePropagation();
@@ -357,8 +363,7 @@ function SliderEventHelper(buttonStart, buttonEnd) {
       newX = that.validateNewPosition(activeButton, activeButton.offsetLeft - 1);
     } else if (e.keyCode === arrowRight) {
       newX = that.validateNewPosition(activeButton, activeButton.offsetLeft + 1);
-    }
-    else {
+    } else {
       return;
     }
 
@@ -374,7 +379,15 @@ function SliderEventHelper(buttonStart, buttonEnd) {
       const touch = evt.touches[0] || evt.changedTouches[0];
 
       return touch.pageX || touch.clientX;
-    } else if (e.type === 'mousedown' || e.type === 'mouseup' || e.type === 'mousemove' || e.type === 'mouseover' || e.type === 'mouseout' || e.type === 'mouseenter' || e.type === 'mouseleave') {
+    } else if (
+      e.type === 'mousedown' ||
+      e.type === 'mouseup' ||
+      e.type === 'mousemove' ||
+      e.type === 'mouseover' ||
+      e.type === 'mouseout' ||
+      e.type === 'mouseenter' ||
+      e.type === 'mouseleave'
+    ) {
       return e.clientX;
     } else {
       return undefined;
@@ -382,49 +395,49 @@ function SliderEventHelper(buttonStart, buttonEnd) {
   }
 
   function init() {
-    buttonStart.addEventListener('mousedown', handleButtonGrabbed, {passive: false});
-    buttonStart.addEventListener('touchstart', handleButtonGrabbed, {passive: false});
-    buttonStart.addEventListener('touchend', handleButtonRelease, {passive: false});
-    buttonStart.addEventListener('touchcancel', handleButtonRelease, {passive: false});
-    buttonEnd.addEventListener('mousedown', handleButtonGrabbed, {passive: false});
-    buttonEnd.addEventListener('touchstart', handleButtonGrabbed, {passive: false});
-    buttonEnd.addEventListener('touchend', handleButtonRelease, {passive: false});
-    buttonEnd.addEventListener('touchcancel', handleButtonRelease, {passive: false});
+    buttonStart.addEventListener('mousedown', handleButtonGrabbed, { passive: false });
+    buttonStart.addEventListener('touchstart', handleButtonGrabbed, { passive: false });
+    buttonStart.addEventListener('touchend', handleButtonRelease, { passive: false });
+    buttonStart.addEventListener('touchcancel', handleButtonRelease, { passive: false });
+    buttonEnd.addEventListener('mousedown', handleButtonGrabbed, { passive: false });
+    buttonEnd.addEventListener('touchstart', handleButtonGrabbed, { passive: false });
+    buttonEnd.addEventListener('touchend', handleButtonRelease, { passive: false });
+    buttonEnd.addEventListener('touchcancel', handleButtonRelease, { passive: false });
 
-    window.addEventListener('mouseup', handleButtonRelease, {passive: false});
-    window.addEventListener('touchend', handleButtonRelease, {passive: false});
-    window.addEventListener('touchcancel', handleButtonRelease, {passive: false});
+    window.addEventListener('mouseup', handleButtonRelease, { passive: false });
+    window.addEventListener('touchend', handleButtonRelease, { passive: false });
+    window.addEventListener('touchcancel', handleButtonRelease, { passive: false });
 
-    window.addEventListener('mousemove', handleButtonMove, {passive: false});
-    window.addEventListener('touchmove', handleButtonMove, {passive: false});
-    window.addEventListener('mouseout', (e) => {
-      if (e.toElement == null && e.relatedTarget == null) {
-        handleButtonRelease(e);
-      }
-    }, {passive: false});
+    window.addEventListener('mousemove', handleButtonMove, { passive: false });
+    window.addEventListener('touchmove', handleButtonMove, { passive: false });
+    window.addEventListener(
+      'mouseout',
+      (e) => {
+        if (e.toElement == null && e.relatedTarget == null) {
+          handleButtonRelease(e);
+        }
+      },
+      { passive: false },
+    );
 
-    window.addEventListener('keydown', handleKeyDown, {passive: false});
+    window.addEventListener('keydown', handleKeyDown, { passive: false });
   }
 
   init();
 }
 
-
 OmRangeSlider.init = function (settings) {
-
   const defaultSettings = {
     selector: 'input[type=range][multiple]',
-    inputValueStyle: OmRangeSliderInputValueStyles.DEFAULT_COMMA_SEPARATED
+    inputValueStyle: OmRangeSliderInputValueStyles.DEFAULT_COMMA_SEPARATED,
   };
   settings = settings ? Object.assign(defaultSettings, settings) : defaultSettings;
 
   const rangeSliders = document.querySelectorAll(settings.selector);
   for (const rangeSlider of rangeSliders) {
-    (new OmRangeSlider(rangeSlider, settings.inputValueStyle))
-        .setDebug(false)
-        .initialize();
+    new OmRangeSlider(rangeSlider, settings.inputValueStyle).setDebug(false).initialize();
   }
-}
+};
 
 const filter = function () {
   const btns = document.querySelectorAll('[data-filter-btn]');
@@ -452,19 +465,23 @@ const filter = function () {
     unit: '',
   });
 
-  const rangeFrom = document.querySelector('[data-range-from]')
-  const rangeTo = document.querySelector('[data-range-to]')
-  const rangeInput =  document.getElementById('inputPieces');
-   if(rangeInput) {
-     const initValues = rangeInput.value.split(',')
-     rangeFrom.innerText = initValues[0];
-     rangeTo.innerText = initValues[1];
+  const rangeFrom = document.querySelector('[data-range-from]');
+  const rangeTo = document.querySelector('[data-range-to]');
+  const rangeInput = document.getElementById('inputPieces');
+  if (rangeInput) {
+    const initValues = rangeInput.value.split(',');
+    rangeFrom.innerText = initValues[0];
+    rangeTo.innerText = initValues[1];
 
-     rangeInput.addEventListener('rangechange', function(e) {
-       rangeFrom.innerText = e.detail[0];
-       rangeTo.innerText = e.detail[1];
-     }, true);
-   }
+    rangeInput.addEventListener(
+      'rangechange',
+      function (e) {
+        rangeFrom.innerText = e.detail[0];
+        rangeTo.innerText = e.detail[1];
+      },
+      true,
+    );
+  }
 };
 
 export default filter;
