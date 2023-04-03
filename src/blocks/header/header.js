@@ -16,8 +16,7 @@ const header = function () {
   });
 
   function checkHref() {
-    // if (window.location.pathname.length > 1) {
-    if (window.location.pathname.split('/')[2].length > 0) {
+    if (window.location.pathname.length > 1) {
       header.classList.add('header--dark');
     } else {
       header.classList.remove('header--dark');
