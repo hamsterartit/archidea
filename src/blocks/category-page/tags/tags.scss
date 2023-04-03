@@ -39,6 +39,7 @@
       height: 32px;
     }
 
+    &:hover,
     :checked + & {
       background-color: $black;
 

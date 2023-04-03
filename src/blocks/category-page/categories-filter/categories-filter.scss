@@ -10,10 +10,13 @@
 .categories-filter__inner {
   margin-top: 24px;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .categories-filter__btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: 0;
 
@@ -24,6 +27,11 @@
   text-align: left;
 
   gap: 20px;
+  border-bottom: 1px solid transparent;
+
+  &._active {
+    border-color: $black;
+  }
 }
 
 .categories-filter__icon {
@@ -51,7 +59,12 @@
 }
 
 .categories-filter__link {
-  display: block;
+  display: inline-block;
 
   color: $black;
+  border-bottom: 1px solid transparent;
+
+  &._active {
+    border-color: $black;
+  }
 }
