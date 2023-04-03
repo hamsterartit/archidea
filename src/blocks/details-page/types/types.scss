@@ -1,10 +1,11 @@
 .details-types {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
   align-items: center;
 
   font-size: 16px;
   line-height: 20px;
+  gap: 20px;
 }
 
 .details-types__title {

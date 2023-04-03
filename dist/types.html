@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archidea</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- To make mobile header light - remove header--mobile-dark
+and add class header--mobile-light -->
+
+<header class="header header--mobile-dark" data-header>
+  <div class="container container--lg">
+    <div class="header__menu" data-header-menu>
+      <div class="header__menu-list">
+        <div class="mobile-main-nav" data-menu-list="1">
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="2"
+            >КАТАЛОГ
+            <svg class="mobile-main-nav-link__icon">
+              <use xlink:href="./icons/icons.svg#icon_triangle-right"></use>
+            </svg>
+          </a>
+          <a class="mobile-main-nav-link" href="/archidea/content.html">Гарантия</a>
+          <a class="mobile-main-nav-link" href="/archidea/content.html">Доставка и оплата</a>
+          <a class="mobile-main-nav-link" href="/archidea/contacts.html">Контакты</a>
+          <a class="mobile-main-nav-link" href="/archidea/feedback.html">Отзывы</a>
+        </div>
+        <div class="mobile-main-nav" hidden data-menu-list="2">
+          <button class="mobile-back-btn" data-menu-list-num="1">
+            <svg class="mobile-back-btn__icon">
+              <use xlink:href="./icons/icons.svg#icon_arrow-right"></use>
+            </svg>
+            Назад
+          </button>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">УЛИЧНЫЕ СКАМЕЙКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">УРНЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">СТОЛЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ПАРКОВОЧНЫЕ СТОЛБИКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ЗАБОРЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">НАВЕСЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ИНДИВИДУАЛЬНЫЕ МАФ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ДИЗАЙН</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">БЕСЕДКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ЦВЕТНИКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ВЕЛОПАРКОВКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">КОНТЕЙНЕРНЫЕ БОКСЫ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ЛЕЖАКИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">НАВИГАЦИИ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">КОРЗИНЫ ДЛЯ КОНДИЦИОНЕРОВ</a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="3">ПОДПОРНЫЕ СТЕНКИ</a>
+        </div>
+        <div class="mobile-main-nav" hidden data-menu-list="3">
+          <button class="mobile-back-btn" data-menu-list-num="2">
+            <svg class="mobile-back-btn__icon">
+              <use xlink:href="./icons/icons.svg#icon_arrow-right"></use>
+            </svg>
+            Назад
+          </button>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Деревянные скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Металлические скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Парковые скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Садовые скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Скамейки без спинки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Скамейки бетонные </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4"> Скамейки из бетона и дерева </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Скамейки из металла и дерева </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Скамейки кованые </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Скамейки с навесом </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Чугунные скамейки </a>
+          <a class="mobile-main-nav-link" href="#" data-menu-list-num="4">Скамейки для вокзалов </a>
+        </div>
+        <div class="mobile-main-nav" hidden data-menu-list="4">
+          <button class="mobile-back-btn" data-menu-list-num="3">
+            <svg class="mobile-back-btn__icon">
+              <use xlink:href="./icons/icons.svg#icon_arrow-right"></use>
+            </svg>
+            Назад
+          </button>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Новая Волна»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Фестиваль»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Дуга» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Лидия» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Ладья» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Лондон» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Глория» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Амфитеатр»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Владивосток»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Эконом» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Техно» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Ботаника» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Дели» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Природа» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Биштайн» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html">
+            Серия «Набережная»
+          </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Анапа» </a>
+          <a class="mobile-main-nav-link mobile-main-nav-link--sm" href="/archidea/category.html"> Серия «Пенек» </a>
+        </div>
+      </div>
+      <div class="header__menu-inner">
+        <button class="header__btn text-xsm" data-popup-open="city-popup" data-lbl="Город:">
+          <svg class="header__icon">
+            <use xlink:href="./icons/icons.svg#icon_triangle-red"></use>
+          </svg>
+          Москва
+        </button>
+
+        <p class="header__time text-xsm" data-lbl="Режим работы:">
+          <svg class="header__icon">
+            <use xlink:href="./icons/icons.svg#icon_circle-green"></use>
+          </svg>
+          Будни с 8:00 до 21:00 • Выходные с 9:00 до 17:00
+        </p>
+
+        <button class="header__call-btn text-sm" type="button" data-popup-open="call-popup">
+          <svg class="header__icon">
+            <use xlink:href="./icons/icons.svg#icon_circle-yellow"></use>
+          </svg>
+          заказать звонок
+        </button>
+        <a class="nav-link nav-link--desktop-hide header-mobile-call" href="tel:78000000000">+7 (800) 000 00 00</a>
+      </div>
+      <div class="header__menu-social">
+        <div class="header-social">
+          <div class="header-social__item">
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_youtube"></use>
+              </svg>
+            </a>
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_vk"></use>
+              </svg>
+            </a>
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="header-social__item">
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_telegram"></use>
+              </svg>
+            </a>
+            <a class="header-social__link" href="">
+              <svg>
+                <use xlink:href="./icons/icons.svg#icon_whatsapp"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__box" data-header-box>
+      <button class="menu-btn" data-header-menu-btn>
+        <svg class="menu-btn__icon menu-btn__icon--open">
+          <use xlink:href="./icons/icons.svg#icon_burger"></use>
+        </svg>
+        <svg class="menu-btn__icon menu-btn__icon--close">
+          <use xlink:href="./icons/icons.svg#icon_cross"></use>
+        </svg>
+      </button>
+
+      <a class="header__logo" href="/archidea">
+        <svg class="header__logo-img" viewBox="0 0 195 34" fill="none">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16.3587 0.0187649L32.736 33.9938H0L8.19181 17.0031L16.3587 0.0187649Z"
+            fill="#EA4335"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M64.0559 0C69.1157 0 73.639 2.21209 76.7522 5.72395V28.2761C73.639 31.7817 69.1095 34 64.0559 34C54.6849 34 47.0796 26.4014 47.0796 17.0156C47.0796 7.62985 54.6849 0 64.0559 0Z"
+            fill="#10B390"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M34.7887 18.7966C39.9733 18.7966 44.1597 14.5973 44.1597 9.41079C44.1597 4.22424 39.9733 0.0187649 34.7887 0.0187649H29.6415V18.7966H34.7887Z"
+            fill="#F7A71A"
+          />
+          <path d="M108.609 0H81.55V33.9938H108.609V0Z" fill="#3369FF" />
+          <path
+            d="M122.69 1H124.296L129 13.8333H127.633L126.628 11.088H120.385L119.381 13.8333H118L122.69 1ZM120.845 9.80339H126.142L123.496 2.58382L120.845 9.80339Z"
+            fill="currentColor"
+          />
+          <path
+            d="M137.556 13.8333V1H141.768C142.433 1 143.038 1.16278 143.566 1.49715C144.099 1.83591 144.52 2.28465 144.835 2.84339C145.151 3.40212 145.308 4.04005 145.308 4.75277C145.308 5.3775 145.189 5.94943 144.933 6.45978C144.678 6.97012 144.354 7.39687 143.92 7.73123C143.498 8.06999 143.004 8.29437 142.471 8.40435L145.5 13.8289H144.064L141.07 8.50554H138.799V13.8289H137.556V13.8333ZM138.799 7.22529H141.675C142.109 7.22529 142.51 7.1109 142.872 6.88652C143.234 6.66215 143.523 6.36299 143.741 5.98903C143.958 5.60187 144.069 5.16632 144.069 4.69118C144.069 4.20283 143.958 3.76729 143.741 3.38013C143.523 3.00617 143.234 2.70701 142.872 2.48263C142.51 2.25826 142.109 2.14387 141.675 2.14387H138.799V7.22529Z"
+            fill="currentColor"
+          />
+          <path
+            d="M159.898 14.4444C159.007 14.4444 158.174 14.2667 157.387 13.9289C156.608 13.5778 155.933 13.0978 155.335 12.48C154.75 11.8622 154.291 11.1556 153.944 10.3378C153.611 9.52 153.444 8.64889 153.444 7.72889C153.444 6.79556 153.611 5.92889 153.944 5.10666C154.291 4.30222 154.75 3.58222 155.335 2.96444C155.933 2.34667 156.608 1.86667 157.387 1.51556C158.179 1.17333 159.007 1 159.898 1C160.956 1 161.941 1.24 162.832 1.72889C163.723 2.22222 164.466 2.86222 165.051 3.67111L163.89 4.30222C163.431 3.68444 162.846 3.19556 162.13 2.84C161.428 2.47556 160.677 2.29778 159.898 2.29778C159.169 2.29778 158.507 2.43555 157.882 2.72444C157.256 3.01333 156.721 3.40444 156.248 3.90667C155.776 4.40889 155.407 4.97778 155.15 5.63111C154.88 6.28444 154.754 6.97778 154.754 7.72444C154.754 8.47111 154.88 9.17333 155.15 9.82666C155.42 10.48 155.789 11.0489 156.262 11.5511C156.734 12.0533 157.283 12.4444 157.909 12.7244C158.521 13 159.182 13.1511 159.898 13.1511C160.713 13.1511 161.469 12.96 162.157 12.5956C162.859 12.2178 163.431 11.7378 163.894 11.1467L165.056 11.7778C164.471 12.5822 163.728 13.2267 162.837 13.72C161.941 14.2044 160.956 14.4444 159.898 14.4444Z"
+            fill="currentColor"
+          />
+          <path
+            d="M181.512 1H182.778V13.8333H181.512V7.59924H174.877V13.8333H173.611V1H174.877V6.31459H181.512V1Z"
+            fill="currentColor"
+          />
+          <path d="M124.111 21.1667H122.889V34H124.111V21.1667Z" fill="currentColor" />
+          <path
+            d="M136.333 34V21.1667H140.47C141.333 21.1667 142.148 21.3296 142.903 21.6643C143.658 21.9902 144.328 22.4526 144.898 23.0384C145.469 23.6373 145.92 24.3111 146.237 25.0862C146.568 25.8614 146.722 26.6981 146.722 27.5833C146.722 28.4685 146.563 29.2921 146.237 30.0672C145.92 30.8423 145.469 31.5293 144.898 32.1151C144.328 32.7008 143.658 33.1632 142.903 33.5023C142.148 33.8415 141.333 34 140.47 34H136.333ZM137.586 32.714H140.47C141.165 32.714 141.809 32.5907 142.418 32.3133C143.028 32.049 143.551 31.6879 144.01 31.2167C144.474 30.741 144.826 30.1949 145.092 29.5828C145.349 28.9574 145.469 28.2968 145.469 27.5833C145.469 26.8699 145.349 26.2093 145.092 25.5839C144.826 24.9585 144.469 24.4212 144.01 23.95C143.547 23.4744 143.015 23.1133 142.405 22.8402C141.809 22.576 141.165 22.4394 140.47 22.4394H137.586V32.714Z"
+            fill="currentColor"
+          />
+          <path
+            d="M155.278 34V21.1667H163.222V22.4394H156.585V26.4823H162.081V27.7683H156.585V32.714H163.222V34H155.278Z"
+            fill="currentColor"
+          />
+          <path
+            d="M177.074 21.1667H178.682L183.389 34H182.021L181.015 31.2519H174.762L173.757 34H172.389L177.074 21.1667ZM175.241 29.9659H180.524L177.876 22.7389L175.241 29.9659Z"
+            fill="currentColor"
+          />
+          <path
+            d="M195 32.1369C195 32.4069 194.956 32.6454 194.853 32.8659C194.761 33.0955 194.626 33.298 194.459 33.4645C194.291 33.631 194.096 33.757 193.873 33.847C193.658 33.9505 193.423 34 193.161 34C192.898 34 192.651 33.9505 192.428 33.847C192.213 33.7435 192.022 33.604 191.851 33.424C191.692 33.244 191.568 33.0415 191.477 32.8254C191.385 32.5959 191.341 32.3664 191.341 32.1234C191.341 31.8534 191.397 31.5879 191.52 31.3314C191.632 31.0749 191.815 30.8454 192.062 30.6563L192.356 31.2414C192.221 31.3584 192.118 31.4979 192.05 31.6509C191.982 31.8174 191.946 31.9704 191.946 32.1369C191.946 32.2899 191.982 32.4429 192.038 32.5824C192.094 32.7354 192.185 32.8614 192.297 32.9785C192.4 33.082 192.536 33.172 192.679 33.235C192.822 33.298 192.993 33.3385 193.165 33.3385C193.336 33.3385 193.491 33.3115 193.638 33.2485C193.786 33.1855 193.921 33.0955 194.021 32.9785C194.132 32.8614 194.224 32.7354 194.279 32.5959C194.347 32.4564 194.383 32.2899 194.383 32.1234C194.383 32.0199 194.359 31.9074 194.327 31.8039C194.291 31.6869 194.248 31.5879 194.192 31.4979C194.124 31.4079 194.045 31.3179 193.953 31.2414C193.873 31.1649 193.774 31.1019 193.658 31.0479V31.7364H193.117V30.2828C193.376 30.2693 193.615 30.3233 193.837 30.4088C194.064 30.4988 194.267 30.6383 194.435 30.8048C194.614 30.9714 194.749 31.1739 194.841 31.4034C194.956 31.6284 195 31.8849 195 32.1369ZM191.401 25.9131V24.4596C191.401 24.2571 191.445 24.077 191.548 23.9105C191.64 23.744 191.775 23.6045 191.931 23.5145C192.09 23.411 192.269 23.3615 192.46 23.3615C192.631 23.3615 192.775 23.402 192.902 23.465C193.037 23.528 193.161 23.6045 193.252 23.7215C193.356 23.8385 193.423 23.9645 193.479 24.104L194.936 23.1995V23.9646L193.539 24.8331V25.2561H194.936V25.9131H191.401ZM192.914 25.2516V24.5361C192.914 24.4461 192.89 24.3561 192.846 24.2796C192.81 24.2031 192.743 24.1401 192.675 24.0996C192.595 24.0501 192.516 24.023 192.428 24.023C192.337 24.023 192.249 24.0501 192.181 24.0996C192.102 24.1401 192.046 24.2031 192.002 24.2796C191.958 24.3561 191.934 24.4461 191.934 24.5361V25.2516H192.914ZM195 17.1737C195 17.4302 194.956 17.6598 194.865 17.8893C194.761 18.1188 194.626 18.3123 194.47 18.4878C194.299 18.6543 194.096 18.7803 193.885 18.8838C193.658 18.9873 193.423 19.0233 193.173 19.0233C192.914 19.0233 192.675 18.9828 192.46 18.8838C192.233 18.7803 192.042 18.6543 191.875 18.4878C191.704 18.3078 191.568 18.1188 191.481 17.8893C191.389 17.6598 191.333 17.4302 191.333 17.1737C191.333 16.9037 191.389 16.6742 191.481 16.4447C191.572 16.2152 191.708 16.0217 191.875 15.8462C192.046 15.6797 192.237 15.5537 192.46 15.4502C192.675 15.3601 192.91 15.3106 193.173 15.3106C193.419 15.3106 193.658 15.3601 193.885 15.4502C194.1 15.5537 194.303 15.6797 194.47 15.8462C194.63 16.0262 194.765 16.2152 194.865 16.4447C194.956 16.6787 195 16.9082 195 17.1737ZM194.391 17.1737C194.391 17.0072 194.355 16.8407 194.287 16.7012C194.22 16.5617 194.14 16.4312 194.029 16.3187C193.917 16.2062 193.782 16.1162 193.634 16.0622C193.487 15.9992 193.34 15.9587 193.173 15.9587C193.001 15.9587 192.846 15.9992 192.699 16.0622C192.552 16.1252 192.428 16.2017 192.317 16.3187C192.205 16.4357 192.114 16.5617 192.046 16.7012C191.99 16.8407 191.954 17.0072 191.954 17.1737C191.954 17.3402 191.99 17.4932 192.046 17.6328C192.114 17.7858 192.205 17.9118 192.317 18.0153C192.428 18.1323 192.556 18.2178 192.699 18.2853C192.846 18.3348 193.005 18.3753 193.173 18.3753C193.344 18.3753 193.499 18.3348 193.646 18.2718C193.794 18.2223 193.917 18.1323 194.029 18.0153C194.14 17.8983 194.232 17.7723 194.287 17.6328C194.359 17.4932 194.391 17.3402 194.391 17.1737ZM195 9.41988C195 9.72589 194.932 9.98241 194.797 10.2119C194.662 10.4414 194.47 10.6214 194.232 10.7474C194.005 10.8644 193.746 10.9274 193.463 10.9274H191.397V10.2749H193.463C193.634 10.2749 193.778 10.2344 193.925 10.1714C194.06 10.1084 194.172 10.0049 194.252 9.8789C194.343 9.7529 194.387 9.59989 194.387 9.41988C194.387 9.22637 194.343 9.07337 194.252 8.94736C194.172 8.83035 194.06 8.73135 193.925 8.66835C193.778 8.60534 193.63 8.56485 193.463 8.56485H191.397V7.91232H193.463C193.678 7.91232 193.869 7.95282 194.06 8.01582C194.24 8.09232 194.411 8.19583 194.546 8.32183C194.693 8.46134 194.805 8.61434 194.885 8.80785C194.968 8.98336 195 9.19037 195 9.41988ZM194.932 3.44811H191.401V2.09805C191.401 1.89554 191.445 1.70203 191.548 1.53553C191.64 1.36902 191.775 1.24301 191.931 1.13951C192.102 1.04951 192.269 1 192.46 1C192.663 1 192.842 1.0495 193.001 1.15301C193.161 1.24301 193.296 1.38252 193.384 1.54903C193.487 1.71553 193.531 1.89554 193.531 2.09805V2.78658H194.928V3.44811H194.932ZM192.914 2.78658V2.16105C192.914 2.07105 192.89 1.98105 192.846 1.90454C192.81 1.82804 192.743 1.76504 192.675 1.72453C192.595 1.67503 192.516 1.64803 192.428 1.64803C192.337 1.64803 192.249 1.67503 192.181 1.72453C192.102 1.76504 192.046 1.82804 192.002 1.90454C191.958 1.98105 191.934 2.07105 191.934 2.16105V2.78658H192.914Z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+
+      <a class="nav-link nav-link--mob-hide text-sm" href="/archidea/categories.html">
+        <svg class="nav-link__icon">
+          <use xlink:href="./icons/icons.svg#icon_burger"></use>
+        </svg>
+        Каталог
+      </a>
+
+      <div class="header-search" data-search>
+  <div class="search-field">
+    <svg class="search-field__icon search-field__icon--hide">
+      <use xlink:href="./icons/icons.svg#icon_search"></use>
+    </svg>
+    <input class="search-field__input" data-search-input type="text" placeholder="Поиск" />
+    <button class="search-field__close" data-search-close>
+      <svg class="search-field__icon">
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="header-search__dropdown">
+    <p class="header-search__hint">по запросу “МАФ” найдено 907 товаров</p>
+    <div class="header-search__results">
+      <div class="header-search__result">
+        <img src="./img/bench.png" alt=""/>
+        <span>Скамейка «Счастье» 1800</span>
+      </div>
+      <div class="header-search__result">
+        <img src="./img/bench.png" alt=""/>
+        <span>Скамейка «Счастье» 1800</span>
+      </div>
+      <div class="header-search__result">
+        <img src="./img/bench.png" alt=""/>
+        <span>Скамейка «Счастье» 1800</span>
+      </div>
+    </div>
+
+    <a class="header-search__link" href="">Все результаты</a>
+  </div>
+</div>
+
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li>
+            <a class="nav-link text-sm" href="/archidea/content.html">Гарантия</a>
+          </li>
+          <li>
+            <a class="nav-link text-sm" href="/archidea/content.html">Доставка и оплата</a>
+          </li>
+          <li>
+            <a class="nav-link text-sm" href="/archidea/contacts.html">Контакты</a>
+          </li>
+          <li>
+            <a class="nav-link text-sm" href="/archidea/feedback.html">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="nav-link nav-link--desktop-hide" data-popup-open="call-popup">
+          <svg class="nav-link__icon">
+            <use xlink:href="./icons/icons.svg#icon_phone"></use>
+          </svg>
+        </button>
+        <button class="nav-link nav-link--desktop-hide" data-search-open>
+          <svg class="nav-link__icon">
+            <use xlink:href="./icons/icons.svg#icon_search"></use>
+          </svg>
+        </button>
+        <a class="nav-link nav-link--mob-hide" href="tel:78000000000">+7 (800) 000 00 00</a>
+        <button class="nav-link text-sm" data-popup-open="login-popup">
+          <svg class="nav-link__icon">
+            <use xlink:href="./icons/icons.svg#icon_user"></use>
+          </svg>
+        </button>
+        <a class="nav-link nav-link--mob-hide text-sm" href="">
+          <svg class="nav-link__icon">
+            <use xlink:href="./icons/icons.svg#icon_heart"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <div class="page-wrapper">
+          <div class=" container container--sm">
+              <div class="breadcrumbs">
+    
+        <a class="breadcrumbs__link" href="/">Главная</a>
+    
+        <a class="breadcrumbs__link" href="">Текстура, цвет, покрытие</a>
+    
+</div>
+
+              <div class="page-wrapper__head">
+                  <h1 class="h2 uppercase">Текстура, цвет, покрытие</h1>
+              </div>
+              <div class="type-tabs" data-tabs>
+  <div class="type-tabs__controls">
+    <button class="type-tabs__btn _active" data-tab-btn>дерево</button>
+    <button class="type-tabs__btn" data-tab-btn>металл</button>
+    <button class="type-tabs__btn" data-tab-btn>бетон</button>
+    <button class="type-tabs__btn" data-tab-btn>текстиль</button>
+  </div>
+  <div class="type-tabs__content _active" data-tabs-content>
+    <div class="types-content">
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type1.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Сосна</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type2.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Светлый Дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type3.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Темный дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type4.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Клен</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type1.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Сосна</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type2.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Светлый Дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type3.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Темный дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type4.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Клен</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="type-tabs__content" data-tabs-content>
+    <div class="types-content">
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type1.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Сосна</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type2.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Светлый Дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type3.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Темный дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type4.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Клен</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type1.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Сосна</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type2.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Светлый Дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type3.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Темный дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type4.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Клен</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="type-tabs__content" data-tabs-content>
+    <div class="types-content">
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type1.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Сосна</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type2.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Светлый Дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type3.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Темный дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type4.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Клен</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type1.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Сосна</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type2.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Светлый Дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type3.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Темный дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type4.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Клен</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="type-tabs__content" data-tabs-content>
+    <div class="types-content">
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type1.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Сосна</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type2.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Светлый Дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type3.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Темный дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type4.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Клен</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type1.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Сосна</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type2.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Светлый Дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type3.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Темный дуб</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+  <div class="types-content__item types-item">
+    <img class="types-item__img" src="./img/type4.jpg" alt="" loading="lazy" />
+    <h3 class="types-item__title">Клен</h3>
+    <p class="types-item__text">
+      В общественных целях сосна является популярным материалом из-за невысокой цены и большой распространенности.
+      Обладая стойким характером к изменению погоды, мебель из сосны получается прочной и практичной.
+    </p>
+  </div>
+</div>
+
+  </div>
+</div>
+
+          </div>
+          <div class="question-block">
+  <div class="question-block__container container container--sm">
+    <div class="question-block__top">
+      <h2 class="h2 uppercase">Есть<br> вопросы?</h2>
+      <form class="question-block__form">
+        <input class="question-block__input" type="text" placeholder="НОмер телефона" />
+        <button class="question-block__btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="question-block__bottom">
+      <div class="question-block__phone">
+        <p class="text-lg">Зайдайте интересующие вас вопросы по номеру телефона</p>
+        <a class="question-block__phone-link" href="tel:74950000000"> +7 (495) 000-00-00 </a>
+      </div>
+      <div class="question-block__info">
+        <p class="question-block__lbl text-lg">Или оставте свой номер телефона и наш инженер перезвонит вам через 15 минут</p>
+        <p class="question-block__hint text-lg">
+          Нажимая «отправить», я соглашаюсь c обработкой персональных данных на условиях Политики конфиденциальности.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+
+    </main>
+    <footer class="footer">
+  <button class="footer__request-btn footer__request-btn--mobile">Оставить заявку</button>
+  <div class="footer__inner">
+    <div class="container container--sm">
+      <div class="footer__top">
+        <div class="footer__main-links">
+          <a class="footer__main-link" href="/archidea/content.html">Гарантия </a>
+          <a class="footer__main-link" href="/archidea/content.html"> Доставка и оплата</a>
+          <a class="footer__main-link" href="/archidea/contacts.html">Контакты</a>
+          <a class="footer__main-link" href="/archidea/feedback.html">Отзывы</a>
+        </div>
+        <button class="footer__request-btn footer__request-btn--desktop">Оставить заявку</button>
+        <a class="footer__logo footer__logo--desktop" href="/archidea">
+          <img src="./img/logo-sm.svg" alt="" width="109" height="90"/>
+        </a>
+      </div>
+      <div class="footer__box">
+        <div class="footer__box-item">
+          <div class="footer__box-head">
+            <h3 class="footer__box-title">Категории товаров</h3>
+            <img class="footer__box-icon" src="./img/adv-red.svg" alt="" />
+          </div>
+          <div class="footer__nav-list footer__nav-list--column">
+            <a class="footer__nav-link" href="/archidea/category.html">Уличные скамейке </a>
+            <a class="footer__nav-link" href="/archidea/category.html">Урны</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Столы</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Парковочн столбики</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Заборы и ограждения</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Навес/пергола</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Спорт и отдых </a>
+            <a class="footer__nav-link" href="/archidea/category.html">Индивидуальные маф</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Дизайн и проектирование городских пространств</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Беседки</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Цветники</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Велопарковки </a>
+            <a class="footer__nav-link" href="/archidea/category.html">Контейнерные боксы</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Лежаки</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Навигации</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Корзины для кондиционеров</a>
+            <a class="footer__nav-link" href="/archidea/category.html">Подпорные стенки</a>
+          </div>
+        </div>
+        <div class="footer__box-item footer__box-item--right footer__box-item--sm">
+          <div class="footer__box-head">
+            <h3 class="footer__box-title">О компании</h3>
+            <img class="footer__box-icon" src="./img/adv-yellow.svg" alt="" />
+          </div>
+          <div class="footer__nav-list">
+            <a class="footer__nav-link" href="/archidea/about.html">О нас</a>
+            <a class="footer__nav-link" href="">Акции и скидки</a>
+            <a class="footer__nav-link" href="/archidea/blog.html">Статьи</a>
+            <a class="footer__nav-link" href="/archidea/vacancies.html">Вакансии</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__box footer__box--grid">
+        <div class="footer__box-item">
+          <div class="footer__box-head">
+            <h3 class="footer__box-title">Социальные сети / Мессенджеры</h3>
+            <img class="footer__box-icon" src="./img/adv-green.svg" alt="" />
+          </div>
+
+          <div class="footer__social">
+            <div class="footer__social-item">
+              <a class="footer__social-link" href="">
+                <svg class="footer__social-link-icon">
+                  <use xlink:href="./icons/icons.svg#icon_youtube"></use>
+                </svg>
+              </a>
+              <a class="footer__social-link" href="">
+                <svg class="footer__social-link-icon">
+                  <use xlink:href="./icons/icons.svg#icon_vk"></use>
+                </svg>
+              </a>
+              <a class="footer__social-link" href="">
+                <svg class="footer__social-link-icon">
+                  <use xlink:href="./icons/icons.svg#icon_instagram"></use>
+                </svg>
+              </a>
+            </div>
+           <div class="footer__social-item footer__social-item--right">
+             <a class="footer__social-link" href="">
+               <svg class="footer__social-link-icon">
+                 <use xlink:href="./icons/icons.svg#icon_telegram"></use>
+               </svg>
+             </a>
+             <a class="footer__social-link" href="">
+               <svg class="footer__social-link-icon">
+                 <use xlink:href="./icons/icons.svg#icon_whatsapp"></use>
+               </svg>
+             </a>
+           </div>
+          </div>
+        </div>
+        <div class="footer__box-item footer__box-item--right">
+          <div class="footer__box-head">
+            <h3 class="footer__box-title">Свяжитесь с нами</h3>
+            <img class="footer__box-icon" src="./img/adv-blue.svg" alt="" />
+          </div>
+
+          <p>
+            Свяжитесь с нами 140070, Россия, Московская область, Люберецкий район, поселок Томилино, микрорайон
+            Птицефабрика
+          </p>
+          <a class="footer__contact-link" href="tel:70000000000">+7 (000) 000-00-00 </a>
+          <a class="footer__contact-link" href="mailto:test@gmail.com">test@gmail.com</a>
+          <a class="footer__logo footer__logo--mobile" href="/archidea">
+            <img src="./img/logo-footer.svg" alt="" width="228" height="40" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__box">
+          <div class="footer__copyright text-sm">
+            <p>Сайт ©2022 г. Все права защищены.</p>
+            <a href="/archidea/site-map.html">Карта сайта</a>
+            <a href="">Публичная оферта</a>
+            <a href="">Подписка</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+    <div class="popup" id="login-popup">
+  <div class="popup__overlay" data-popup-close="login-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="login-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <svg class="popup__icon">
+      <use xlink:href="./icons/icons.svg#icon_user"></use>
+    </svg>
+    <form class="popup__form" data-popup-form>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Эл. почта / Телефон*" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Пароль" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Вход</button>
+    </form>
+    <p class="popup__hint">*введите email или телефон без пробелов начиная с +7, пример: +79003001020</p>
+    <div class="popup__actions">
+      <button class="popup__action popup__action--black" data-popup-open="registration-popup">Регистрация</button>
+      <button class="popup__action popup__action--grey" data-popup-open="password-popup">Забыли пароль?</button>
+    </div>
+  </div>
+</div>
+
+    <div class="popup" id="registration-popup">
+  <div class="popup__overlay" data-popup-close="registration-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="registration-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <svg class="popup__icon">
+      <use xlink:href="./icons/icons.svg#icon_user"></use>
+    </svg>
+    <form class="popup__form" data-popup-form>
+      <div class="popup__actions">
+        <input type="radio" style="display: none" id="phone" checked name="reg-type" />
+        <label for="phone" class="popup__radio">По телефону</label>
+        <input type="radio" style="display: none" id="mail" name="reg-type" />
+        <label for="mail" class="popup__radio">По эл. почте</label>
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Ваше имя" />
+      </div>
+      <div class="field" data-phone>
+        <input class="field__input" type="text" placeholder="Ваш телефон" />
+      </div>
+      <div class="field" data-mail hidden>
+        <input class="field__input" type="text" placeholder="Ваша почта" />
+      </div>
+      <div class="popup__actions">
+        <input type="radio" style="display: none" id="retail" name="sale-types" checked />
+        <label for="retail" class="popup__radio">Розничная</label>
+        <input type="radio" style="display: none" id="wholesale" name="sale-types" />
+        <label for="wholesale" class="popup__radio">Оптовая</label>
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Регистрация</button>
+    </form>
+    <p class="popup__hint">
+      *Я согласен с условиями предоставления услуг и обработкой моих персональных данных при нажатии
+      "Зарегистрироваться"
+    </p>
+    <div class="popup__actions">
+      <button class="popup__action popup__action--black" data-popup-open="login-popup">Вход</button>
+    </div>
+  </div>
+</div>
+
+    <div class="popup" id="password-popup">
+  <div class="popup__overlay" data-popup-close="password-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="password-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Восстановление пароля</h3>
+    <p class="popup__subtitle">Введите адрес эл. почты. Ссылка для восстановления пароля будет выслана на эл. почту</p>
+    <form class="popup__form" data-popup-form>
+      <div class="field">
+        <input class="field__input" type="email" placeholder="Эл. почта" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Восстановить пароль</button>
+    </form>
+  </div>
+</div>
+
+    <div class="popup" id="call-popup">
+  <div class="popup__overlay" data-popup-close="call-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="call-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Заказать звонок</h3>
+    <p class="popup__subtitle">Заполните форму и мы вам перезвоним</p>
+    <form class="popup__form" data-popup-form>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Имя" />
+      </div>
+      <div class="field">
+        <input class="field__input" type="text" placeholder="Телефон +7 000 000 00 00" />
+      </div>
+      <button class="btn btn--lg btn--black" type="submit">Отправить</button>
+    </form>
+    <p class="popup__hint">Я согласен условиями предоставления услуг и обработкой моих персональных
+      данных при нажатии “Заказать звонок”</p>
+  </div>
+</div>
+
+    <div class="popup" id="city-popup">
+  <div class="popup__overlay" data-popup-close="city-popup"></div>
+  <div class="popup__inner">
+    <button class="popup__close" data-popup-close="city-popup">
+      <svg>
+        <use xlink:href="./icons/icons.svg#icon_cross"></use>
+      </svg>
+    </button>
+    <h3 class="popup__title">Ваш город</h3>
+    <form class="popup__form" data-popup-form>
+      <div class="city">
+        <span class="city__name">Ваш город: Москва?</span>
+        <button class="city__btn" type="button">Да</button>
+      </div>
+      <div class="field">
+        <div class="search-field">
+          <svg class="search-field__icon search-field__icon--hide">
+            <use xlink:href="./icons/icons.svg#icon_search"></use>
+          </svg>
+          <input class="search-field__input" type="text" placeholder="Поиск" />
+        </div>
+      </div>
+      <div class="city-list">
+        <label class="city-list__item" for="city-1">
+          <input type="radio" style="display: none" name="cities" id="city-1" checked />
+          <span>Москва</span>
+        </label>
+        <label class="city-list__item" for="city-2">
+          <input type="radio" style="display: none" name="cities" id="city-2" />
+          <span>Санкт-Петербург</span>
+        </label>
+        <label class="city-list__item" for="city-3">
+          <input type="radio" style="display: none" name="cities" id="city-3" />
+          <span>Дубай</span>
+        </label>
+        <label class="city-list__item" for="city-4">
+          <input type="radio" style="display: none" name="cities" id="city-4" />
+          <span>Токио</span>
+        </label>
+        <label class="city-list__item" for="city-5">
+          <input type="radio" style="display: none" name="cities" id="city-5" />
+          <span>Лондон</span>
+        </label>
+        <label class="city-list__item" for="city-6">
+          <input type="radio" style="display: none" name="cities" id="city-6" />
+          <span>Рим</span>
+        </label>
+        <label class="city-list__item" for="city-7">
+          <input type="radio" style="display: none" name="cities" id="city-7" />
+          <span>Рим</span>
+        </label>
+        <label class="city-list__item" for="city-8">
+          <input type="radio" style="display: none" name="cities" id="city-8" />
+          <span>Рим</span>
+        </label>
+        <label class="city-list__item" for="city-9">
+          <input type="radio" style="display: none" name="cities" id="city-9" />
+          <span>Рим</span>
+        </label>
+        <label class="city-list__item" for="city-10">
+          <input type="radio" style="display: none" name="cities" id="city-10" />
+          <span>Рим</span>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  </body>
+</html>

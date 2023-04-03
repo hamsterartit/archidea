@@ -7,10 +7,6 @@
   color: $black;
 
   aspect-ratio: 1/1;
-
-  &:hover {
-    color: $white;
-  }
 }
 
 .tile__inner {
@@ -23,10 +19,12 @@
 
   background-color: $bright-gray;
 
-  color: currentcolor;
+  color: $black;
 
   &:hover {
     background-color: $raisin-black;
+
+    color: $white;
   }
 }
 
@@ -65,7 +63,12 @@
   font-weight: 900;
   line-height: 23px;
 
+  .tile__inner:hover + .tile__links & {
+    color: $white;
+  }
+
   &:hover {
+    color: $black;
     text-decoration: underline;
   }
 }

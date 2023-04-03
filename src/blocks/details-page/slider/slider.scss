@@ -54,6 +54,19 @@
   }
 }
 
+.details-slider__info {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+
+  @include to($lg - 1px) {
+   display: none
+  }
+}
+
 .details-slider__slide {
   overflow: hidden;
 
