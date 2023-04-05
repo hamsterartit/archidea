@@ -31,6 +31,12 @@ button {
   @include md-block {
     height: 45px;
   }
+
+  &:hover {
+    background-color: $black;
+
+    color: $white;
+  }
 }
 
 .btn--lg {
@@ -45,6 +51,12 @@ button {
   background-color: $black;
 
   color: $white;
+
+  &:hover {
+    background-color: $white;
+
+    color: $black;
+  }
 }
 
 .btn--light {

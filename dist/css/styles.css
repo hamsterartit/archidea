@@ -746,6 +746,11 @@ button:disabled {
   white-space: nowrap;
 }
 
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .btn--lg {
   height: 70px;
 }
@@ -753,6 +758,11 @@ button:disabled {
 .btn--black {
   background-color: #000;
   color: #fff;
+}
+
+.btn--black:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .btn--light {
@@ -1627,7 +1637,7 @@ button:disabled {
 
 .filter__clear-btn {
   height: 24px;
-  padding: 3px 8px;
+  padding: 0 8px;
   border: 1px solid #c4c4c4;
   border-radius: 3px;
   color: #c4c4c4;
