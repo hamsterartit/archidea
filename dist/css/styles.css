@@ -1420,6 +1420,7 @@ button:disabled {
   width: 20px;
   height: 20px;
   color: #000;
+  flex-shrink: 0;
 }
 
 .search-field__input {
@@ -5267,8 +5268,8 @@ button:disabled {
 
   .tabs__btn {
     width: 45%;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .feedback {
@@ -6378,6 +6379,11 @@ button:disabled {
   .footer__main-link {
     font-size: 50px;
     line-height: 50px;
+  }
+
+  .tabs__btn {
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .blog-tabs__btn {

@@ -112,6 +112,7 @@
   height: 20px;
 
   color: $black;
+  flex-shrink: 0;
 
   &--hide {
     @include to($xl - 1px) {
