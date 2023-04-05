@@ -6,6 +6,10 @@
 
   @include lg-block {
     display: grid;
+    grid-template-columns: 1fr 300px 250px;
+  }
+
+  @include xl-block {
     grid-template-columns: 1fr 300px 300px;
   }
 }

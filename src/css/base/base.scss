@@ -103,3 +103,10 @@ p {
 button svg {
   pointer-events: none;
 }
+
+input {
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}

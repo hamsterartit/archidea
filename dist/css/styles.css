@@ -507,6 +507,11 @@ button svg {
   pointer-events: none;
 }
 
+input:focus,
+input:focus-visible {
+  outline: none;
+}
+
 .h1 {
   font-size: 35px;
   font-weight: 900;
@@ -1150,6 +1155,7 @@ button:disabled {
   display: flex;
   list-style: none;
   gap: 20px;
+  padding: 0;
 }
 
 .nav-link {
@@ -4110,6 +4116,7 @@ button:disabled {
   justify-content: space-between;
   border-radius: 5px;
   color: #000;
+  min-width: 0;
 }
 
 .info-card__top {
@@ -4120,6 +4127,7 @@ button:disabled {
   font-weight: 500;
   line-height: 14px;
   text-align: center;
+  cursor: pointer;
 }
 
 .info-card__icon-wrap {
@@ -4148,9 +4156,12 @@ button:disabled {
 
 .info-card__attributes {
   display: none;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 30px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .info-card__bottom {
@@ -4163,7 +4174,7 @@ button:disabled {
 .info-card__text {
   display: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 22px;
 }
@@ -4916,13 +4927,13 @@ button:disabled {
 
 @media screen and (min-width: 1024px) {
   .h2 {
-    font-size: 65px;
-    line-height: 78px;
+    font-size: 52px;
+    line-height: 60px;
   }
 
   .h3 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .text-md {
@@ -5064,8 +5075,8 @@ button:disabled {
   }
 
   .footer__main-link {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 40px;
   }
 
   .footer__request-btn--desktop {
@@ -5676,8 +5687,8 @@ button:disabled {
   }
 
   .blog-tabs__btn {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .blog-content__items {
@@ -5800,10 +5811,6 @@ button:disabled {
     margin-top: 70px;
   }
 
-  .sitemap__title {
-    font-size: 30px;
-  }
-
   .error__link {
     width: 300px;
   }
@@ -5855,7 +5862,7 @@ button:disabled {
 
   .details-tab {
     display: grid;
-    grid-template-columns: 1fr 300px 300px;
+    grid-template-columns: 1fr 300px 250px;
   }
 
   .personal-tab--sm {
@@ -6036,6 +6043,8 @@ button:disabled {
     font-weight: 700;
     line-height: 22px;
     text-align: left;
+    cursor: default;
+    pointer-events: none;
   }
 
   .info-card__icon-wrap {
@@ -6256,11 +6265,6 @@ button:disabled {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .blog-item__title {
-    font-size: 50px;
-    line-height: 55px;
-  }
-
   .article-gallery__grid {
     top: -325px;
   }
@@ -6277,6 +6281,19 @@ button:disabled {
     font-size: 30px;
     font-weight: 900;
     line-height: 36px;
+  }
+
+  .details-tab {
+    grid-template-columns: 1fr 300px 300px;
+  }
+
+  .info-card__attributes {
+    font-size: 20px;
+  }
+
+  .info-card__btn,
+  .info-card__text {
+    font-size: 18px;
   }
 
   .company-box__btn {
@@ -6328,15 +6345,48 @@ button:disabled {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
   }
+
+  .blog-item__title {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .sitemap__title {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 1606px) {
+  .h2 {
+    font-size: 65px;
+    line-height: 78px;
+  }
+
+  .h3 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .header__box {
     gap: 60px;
   }
 
   .nav__list {
     gap: 40px;
+  }
+
+  .footer__main-link {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .blog-tabs__btn {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .info-card__attributes {
+    font-size: 25px;
   }
 }
 
